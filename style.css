@@ -1,22 +1,155 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Nunito:wght@400;600&display=swap');
+/* Bottom image at page bottom */
+
+/* Bottom image behind dashboard only */
+.dashboard-bottom-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.dashboard .dashboard-bottom-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+.fixed-bottom-bg {
+  position: fixed !important;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.bottom-image {
+  max-width: 90vw;
+  height: auto;
+  display: block;
+  opacity: 0.32;
+  filter: blur(0.5px);
+}
+.dashboard {
+  position: relative;
+  z-index: 10;
+}
+main, header, footer, #about, #contact {
+  position: relative;
+  z-index: 1;
+}
+/* Fish-Shaped Dashboard Buttons */
+/* Fish Dashboard Buttons - Football/Ellipse Shape, Opaque */
+.fish-dashboard-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 2.5rem;
+  margin: 2.5rem 0 2rem 0;
+  position: relative;
+  z-index: 10;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fish-button.fish-shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  min-width: 240px;
+  min-height: 100px;
+  width: 300px;
+  height: 120px;
+  padding: 0;
+  position: relative;
+  background: linear-gradient(90deg, var(--accent-2) 0%, var(--accent-3) 100%);
+  /* Smooth pointed ellipse (football) shape */
+  clip-path: ellipse(48% 48% at 50% 50%);
+  border-radius: 100vw 100vw 100vw 100vw / 60vw 60vw 60vw 60vw;
+  overflow: hidden;
+  opacity: 1 !important;
+  background-color: var(--accent-2);
+  z-index: 2;
+}
+.fish-button.fish-shape:nth-child(2n) {
+  background: linear-gradient(90deg, var(--accent-1) 0%, var(--accent-2) 100%);
+  opacity: 1 !important;
+  background-color: var(--accent-1);
+}
+.fish-button.fish-shape:hover, .fish-button.fish-shape:focus {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+  filter: brightness(1.08);
+}
+.fish-label {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+  text-align: center;
+  background: none;
+  border-radius: 0;
+  padding: 0.2em 1.2em;
+  max-width: 90%;
+  box-sizing: border-box;
+  z-index: 2;
+  position: relative;
+  margin: 0 auto;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+/* Custom SVG shape support for dashboard buttons */
+.custom-fish-shape {
+  clip-path: url(#your-custom-clip-path);
+}
+.fish-button.fish-shape .fish-label {
+  color: var(--accent-light);
+}
+.fish-button.mizerreef-fish {
+  background: var(--accent-3) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1 !important;
+  z-index: 2;
+}
+.mizerreef-logo-fish {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+}
 /*
   style.css for Chelsey M. Beese, Ph.D. | Personal Academic Website
   Retro, fun, and professional with 70s-inspired color palette and animated fish swoosh
 */
-
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Nunito:wght@400;600&display=swap');
-
 :root {
   --blue-main: #016FA0;
   --blue-alt: #00769E;
-  --fish-swoosh: #001E5A;
-  --accent-light: #78BAAE;
-  --accent-mid: #0295A7;
-  --text-main: #FFEDBF;
-  --accent-1: #FDB36A;
-  --accent-2: #FF751C;
-  --accent-3: #FE3E00;
-  --header-font: 'Baloo 2', Arial, sans-serif;
+  --accent-1: #FE3E00;   /* Red-Orange */
+  --accent-2: #FDB36A;   /* Orange */
+  --accent-3: #FF751C;   /* Bold Orange */
+  --accent-4: #F4845F;   /* Coral */
+  --accent-5: #F9A03F;   /* Muted Orange */
+  --accent-light: #FFF3E0;
+  --accent-dark: #2B2D42;
+  --text-main: #222;
+  --header-font: 'Baloo 2', cursive;
   --body-font: 'Nunito', Arial, sans-serif;
 }
 
@@ -27,13 +160,13 @@ html, body {
   color: var(--text-main);
   font-family: var(--body-font);
   min-height: 100vh;
-  box-sizing: border-box;
 }
 
 header {
-  background: var(--blue-alt);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  padding-bottom: 0.5rem;
+  background: linear-gradient(90deg, var(--accent-1) 0%, var(--accent-3) 100%);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  margin-bottom: 1rem;
+  border-bottom: 4px solid var(--accent-2);
 }
 
 
@@ -43,12 +176,8 @@ header {
   height: auto;
   aspect-ratio: 3003 / 541;
   object-fit: contain;
-  background: #001E5A;
-  border-bottom: 6px solid var(--accent-light);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  display: block;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  border-bottom: 3px solid var(--accent-2);
 }
 
 nav {
@@ -115,6 +244,7 @@ h3 {
   box-shadow: 0 2px 12px rgba(0,0,0,0.13);
   margin-bottom: 1rem;
 }
+/* Remove fish shape from .left-floated, keep only float */
 .left-floated {
   float: left;
   margin-right: 2rem;
@@ -145,33 +275,32 @@ h3 {
   color: var(--text-main);
 }
 
-/* Contact Section */
-#contact .contact-details-modern {
-  margin-top: 1.5rem;
-  background: rgba(0,0,0,0.10);
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-}
-.contact-row {
+/* Contact section styles */
+.contact-icons {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.7rem;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
 }
 .contact-icon {
-  width: 32px;
-  height: 32px;
+  width: 70px;
+  height: 70px;
+  background: var(--accent-2);
   border-radius: 50%;
-  background: var(--accent-light);
-  padding: 4px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
-}
-.alt-emails {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  margin-left: 0.7rem;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: transform 0.18s, box-shadow 0.18s;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.contact-icon img, .contact-icon svg {
+  width: 38px;
+  height: 38px;
+  margin: 0;
+  display: block;
 }
 .alt-email-item a {
   color: var(--accent-1);
@@ -268,11 +397,14 @@ main, header, footer, #about, #contact {
 
 /* Footer */
 footer {
+  background: linear-gradient(90deg, var(--accent-3) 0%, var(--accent-2) 100%);
+  color: var(--accent-dark);
   text-align: center;
-  padding: 1.2rem 0 0.7rem 0;
-  color: var(--accent-light);
-  font-size: 1rem;
-  background: none;
+  padding: 1.5rem 0 1rem 0;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.13);
+  border-top: 4px solid var(--accent-1);
 }
 
 /* Responsive Design */
@@ -308,3 +440,4 @@ footer {
   nav { flex-direction: column; gap: 0.5rem; }
   #gallery .gallery-flex { grid-template-columns: 1fr; }
 }
+/* End of style.css */
