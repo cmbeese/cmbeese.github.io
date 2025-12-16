@@ -1,0 +1,120 @@
+
+# Personal Academic Website Project Roadmap (Restart)
+
+## Project Overview
+A professional academic website for Chelsey M. Beese, Ph.D., featuring:
+- Custom color palette
+- Banner image and fish swoosh SVG
+- Profile photo and bio
+- MizerReef section
+- Publications, CV, and Gallery pages
+- Modern contact section with icons and all emails
+- Responsive, visually appealing layout
+
+---
+
+
+## Color Palette & Design Intent
+- **Background:** #016FA0 (main) or #00769E (alternate)
+- **Fish School Swoosh (bottom graphic):** #001E5A (simple fish silhouettes, static, swoosh design across bottom of page)
+- **Light/Low-Contrast Accents:** #78BAAE, #0295A7
+- **Text:** #FFEDBF (all main text)
+- **Emphasis Accents:** #FDB36A, #FF751C, #FE3E00 (for highlights, buttons, links, etc.)
+
+**Design Note:**
+- The background should use #016FA0 or #00769E for a rich blue look.
+- The fish swoosh graphic should be a static SVG of simple fish silhouettes in #001E5A, swooshing across the bottom of every page.
+- Use #78BAAE and #0295A7 for subtle accents, borders, or section highlights.
+- All main text should be #FFEDBF for high contrast on the blue background.
+- Use #FDB36A, #FF751C, and #FE3E00 for emphasis, buttons, or important highlights.
+
+---
+
+## Bio (About Section)
+**Name:** Chelsey M. Beese, Ph.D.
+**Position:** Postdoctoral Scholar, Integrated Marine Fisheries Lab, Oregon State University
+**Research:** Marine scientist specializing in interdisciplinary research and ecosystem modeling. Research integrates ecological modeling and climate science to explore climate impacts on marine ecosystems and fisheries in the North Pacific. Developer of the MizerReef R package. Passionate about scientific communication, community outreach, social justice, and strengthening relationships with Indigenous knowledge, people, and systems.
+
+---
+
+
+## Key Links & Contact
+- [CV Page](cv.html)
+- [Publications Page](publications.html)
+- [Gallery Page](gallery.html)
+- [MizerReef Project](https://cmbeese.github.io/mizerReef/)
+- [GOACLIM Project](https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project)
+- [ACLIM Project](https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project)
+- [Integrated Marine Fisheries Lab](https://cheryl-barnes.github.io/integrated-marine-fisheries.html)
+- [Oregon State University Marine Sciences](https://marinesciences.oregonstate.edu/)
+- [Victoria University of Wellington](https://www.wgtn.ac.nz)
+- [Marine Ecology and Ecosystem Modelling Lab (MEEM Lab)](https://www.researchgate.net/lab/Marine-Ecology-and-Ecosystem-Modelling-Lab-Alice-Rogers)
+- [Marsden Project: Temperate Mesophotic Ecosystems](https://www.wgtn.ac.nz/news/2023/11/$12-m-funding-for-new-research-projects)
+- [GitHub](https://github.com/cmbeese)
+- [LinkedIn](https://www.linkedin.com/in/chelseybeese/)
+- [ResearchGate](https://www.researchgate.net/profile/Chelsey-Beese-2?ev=hdr_xprf)
+- [ORCID](https://orcid.org/0000-0003-0949-7888)
+- **Emails:**
+    - beese.c.m@gmail.com (personal)
+    - chelsey.beese@oregonstate.edu (OSU)
+    - chelsey.beese@vuw.ac.nz (VUW)
+- **Location:** Wellington, NZ
+
+---
+
+## Images & Graphics
+- Banner: images/whale-banner-3.jpg
+- Profile: images/circle_headshot.png
+- MizerReef Logo: images/mizerReef-logo.png
+- Fish Swoosh: Inline SVG, static, simple fish silhouettes in #001E5A, swoosh pattern across bottom of every page (see index.html and publications.html)
+- Gallery: field and underwater photos (see gallery.html)
+- Social/Email icons: images/email-icon.png, github-mark.png, linkedin-icon.png, researchgate-icon.png, orcid-icon.png
+
+---
+
+## Page Structure
+- **index.html**: Home, About, MizerReef, Contact
+- **projects.html**: Current Projects (highlight ongoing research, grants, collaborations, and project links)
+- **gallery.html**: Field/underwater photo gallery
+- **publications.html**: Publications list
+- **cv.html**: Curriculum Vitae
+- **style.css**: All site styling
+- **images/**: All images and icons
+
+---
+
+
+## Setup Instructions (for tomorrow)
+1. **Start Fresh**: Remove/backup current files if needed.
+2. **Scaffold**: Create index.html, style.css, images/ folder, and other pages as above.
+3. **Add projects.html**: Create a Current Projects page to highlight ongoing research, grants, collaborations, and project links. Include project titles, short descriptions, collaborators, and relevant links (e.g., GOACLIM, ACLIM, Marsden, MizerReef, MEEM Lab, etc.).
+4. **Apply Color Palette**: Use the palette above for backgrounds, text, accents, and buttons.
+5. **Add Banner & Fish Swoosh**: Banner image at top, SVG fish swoosh as section background or footer.
+6. **About Section**: Left-aligned circular profile photo, bio, and contact info.
+7. **MizerReef Section**: Logo left, description right, matching About layout.
+8. **Contact Section**: All emails, icons, and location.
+9. **Gallery Page**: Responsive grid of field/underwater photos (see gallery.html for filenames).
+10. **Publications Page**: List of publications, links to PDFs/DOIs (see publications.html).
+11. **Test Responsiveness**: Check on desktop and mobile.
+12. **Deploy to GitHub Pages**: Push to main branch, enable Pages in repo settings.
+
+---
+
+## Notes
+- Keep CSS clean and DRY (no duplicate/conflicting rules).
+- Use Google Fonts: 'Nunito' for body, 'Quicksand' for headings.
+- All images should be optimized for web.
+- Use semantic HTML5 structure.
+- Keep navigation simple and visible.
+- Use flexbox for layout, avoid floats.
+- Test all links and downloads.
+
+---
+
+## Next Steps
+- Tomorrow: Rebuild from this roadmap, step by step, confirming each section visually before moving on.
+- Use this file as a checklist and reference for all content, colors, and structure.
+
+---
+
+*Prepared for a clean restart. Ready to build a beautiful, functional academic website!*

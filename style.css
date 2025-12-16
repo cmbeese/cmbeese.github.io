@@ -1,0 +1,268 @@
+/* Modern contact details section */
+.contact-details-modern {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+/* About section flex layout */
+.contact-row .alt-emails a {
+    color: #016FA0;
+    text-decoration: none;
+    font-weight: 400;
+}
+.contact-row.location-row {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: #333;
+}
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 0.2rem;
+    vertical-align: middle;
+    transition: transform 0.15s;
+}
+.contact-icon:hover {
+    transform: scale(1.12) rotate(-3deg);
+    box-shadow: 0 2px 8px rgba(1, 31, 90, 0.12);
+}
+/* Gallery page grid */
+/* Gallery page grid */
+.gallery-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    margin: 2rem 0 2.5rem 0;
+}
+/* Fish swoosh as background for About section */
+#about {
+    position: relative;
+    z-index: 1;
+    background: none;
+}
+.fish-bg-svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.5;
+}
+.fish-swoosh {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+}
+#about > * {
+    position: relative;
+    z-index: 2;
+}
+/* Optional frame for banner image */
+.framed-banner {
+    border: 4px solid #78BAAE;
+    box-shadow: 0 4px 24px rgba(1, 31, 90, 0.10);
+    border-radius: 0 0 18px 18px;
+}
+/* Redesigned contact block */
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+.contact-email {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+.contact-email a {
+    color: #001E5A;
+    text-decoration: none;
+    font-weight: 600;
+}
+.alt-emails {
+    display: block;
+    font-size: 0.97rem;
+    color: #016FA0;
+    margin-top: 0.1rem;
+}
+/* .alt-emails a styles already defined above; removed duplicate and orphaned properties */
+.field-gallery-flex img {
+ .field-gallery-flex img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(1, 31, 90, 0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.field-gallery-flex img:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 4px 16px rgba(1, 31, 90, 0.18);
+    z-index: 2;
+}
+/* Header banner styling */
+/* Header banner styling */
+.header-banner {
+    width: 100vw;
+    max-width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+    margin-bottom: 1.2rem;
+    border-radius: 0 0 16px 16px;
+}
+
+/* About section flex layout */
+.about-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.profile-pic.left-floated {
+    margin: 0 2rem 1.2rem 0;
+    float: none;
+    flex-shrink: 0;
+}
+.about-bio {
+    flex: 1 1 300px;
+    min-width: 250px;
+}
+
+/* MizerReef section flex layout */
+.mizerreef-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.mizerreef-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0;
+    flex-shrink: 0;
+}
+.mizerreef-desc {
+    flex: 1 1 300px;
+        width: 100%;
+        max-width: 1100px;
+}
+/* Fish swoosh SVG styling */
+
+.fish-swoosh {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main {
+    position: relative;
+    padding-bottom: 120px; /* Make space for fish swoosh */
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #FFEDBF;
+    color: #001E5A;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 16px rgba(1,31,90,0.07);
+    padding-bottom: 2rem;
+}
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #016FA0;
+    color: #FFEDBF;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #FFEDBF;
+    color: #001E5A;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 2px 16px rgba(1,31,90,0.07);
+    padding-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, .contact-email a, .contact-location {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.01em;
+}
+
+header {
+    background: #016FA0;
+    color: #FFEDBF;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #78BAAE;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #FFEDBF;
+}
+
+nav {
+    margin-top: 1rem;
+}
+nav a {
+    color: #FDB36A;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 1.2rem;
+    font-size: 1.1rem;
+    transition: color 0.15s;
+}
+
+nav a:hover {
+    color: #FE3E00;
+}
+
+
+
+section {
+    margin-bottom: 2.5rem;
+}
+section h2 {
+    color: #FDB36A;
+    border-bottom: 2px solid #78BAAE;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+section h3 {
+    color: #0295A7;
+    margin-top: 1.2rem;
+    font-size: 1.15rem;
+}
+ul {
+    padding-left: 1.2em;
+    margin-bottom: 1.2rem;
+}
+
+}
