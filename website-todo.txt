@@ -1,0 +1,15 @@
+Website To-Do List
+==================
+
+1. Add alt text to all images (gallery, icons, etc.) for accessibility.
+2. Ensure the current page's navigation link is visually highlighted (add class="active" as needed).
+3. Add a meta description tag in the <head> of each page for SEO.
+4. Add a favicon for a professional browser tab look.
+5. Create a simple 404.html page for broken links.
+6. Double-check mobile usability (fonts, navigation, layout).
+7. Optimize large images for web performance.
+8. Make sure all social/contact links open in a new tab (target="_blank" and rel="noopener").
+
+Notes:
+- Review after next round of edits and before next deployment.
+- Prioritize accessibility and mobile experience for best results.

@@ -7,15 +7,18 @@
         <!-- Google Fonts: Quicksand (headings), Nunito (body) -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome CDN for social icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKB4Imkb9hFQ5b1b1z0y5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <img src="images/whale-banner-3.jpg" alt="Whale banner" class="header-banner framed-banner">
+        <img src="images/whale-banner-4.jpg" alt="Whale banner" class="header-banner framed-banner">
         <nav>
             <a href="index.html">Home</a>
             <a href="cv.html">CV</a>
             <a href="publications.html">Publications</a>
             <a href="gallery.html">Gallery</a>
+            <a href="mizerreef.html">MizerReef</a>
         </nav>
     </header>
     <main>
@@ -24,8 +27,8 @@
             <div class="about-flex">
                 <img src="images/circle_headshot.png" alt="Chelsey M. Beese headshot" class="profile-pic left-floated">
                 <div class="about-bio">
-                    <p><strong>Chelsey M. Beese, Ph.D.</strong> is a marine scientist specializing in interdisciplinary research and ecosystem modeling. She is currently a postdoctoral scholar with the <a href="https://cheryl-barnes.github.io/integrated-marine-fisheries.html" target="_blank">Integrated Marine Fisheries Lab</a> at <a href="https://marinesciences.oregonstate.edu/" target="_blank">Oregon State University</a>, working with Dr. Cheryl Barnes (OSU) and Dr. Jon Reum (NOAA) to advance NOAA’s Alaska (<a href="https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project" target="_blank">ACLIM</a>) and Gulf of Alaska (<a href="https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project" target="_blank">GOACLIM</a>) Climate Integrated Modeling projects. Her research integrates ecological modeling and climate science to explore climate impacts on marine ecosystems and fisheries in the North Pacific.</p>
-                    <p>Chelsey is also a research assistant in the <a href="https://www.researchgate.net/lab/Marine-Ecology-and-Ecosystem-Modelling-Lab-Alice-Rogers" target="_blank">Marine Ecology and Ecosystem Modelling Lab</a> at <a href="https://www.wgtn.ac.nz" target="_blank">Victoria University of Wellington</a>, working with Dr. Alice Rogers. Her current work is part of the Marsden-funded project <strong>"Uncovering the functioning and importance of temperate mesophotic ecosystems"</strong>, using ecosystem modeling and field data to improve understanding of these unique and understudied habitats.</p>
+                    <p><strong>Chelsey</strong> is a marine scientist specializing in interdisciplinary research and ecosystem modeling. She is currently a postdoctoral scholar with the <a href="https://cheryl-barnes.github.io/integrated-marine-fisheries.html" target="_blank">Integrated Marine Fisheries Lab</a> at <a href="https://marinesciences.oregonstate.edu/" target="_blank">Oregon State University</a>, working with Dr. Cheryl Barnes (OSU) and Dr. Jon Reum (NOAA) to advance NOAA’s Alaska (<a href="https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project" target="_blank">ACLIM</a>) and Gulf of Alaska (<a href="https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project" target="_blank">GOACLIM</a>) Climate Integrated Modeling projects. Her research integrates ecological modeling and climate science to explore climate impacts on marine ecosystems and fisheries in the North Pacific.</p>
+                    <p>She also works as a part-time research assistant for the <a href="https://www.researchgate.net/lab/Marine-Ecology-and-Ecosystem-Modelling-Lab-Alice-Rogers" target="_blank">Marine Ecology and Ecosystem Modelling Lab</a> under Dr. Alice Rogers at <a href="https://www.wgtn.ac.nz" target="_blank">Victoria University of Wellington</a>.  Her current project is part of the Marsden-funded project <strong>"Uncovering the functioning and importance of temperate mesophotic ecosystems"</strong>, using ecosystem modeling and field data to improve understanding of these unique and understudied habitats.</p>
                     <p>Chelsey completed her Ph.D. in Marine Biology at <a href="https://www.wgtn.ac.nz" target="_blank">Te Herenga Waka – Victoria University of Wellington</a>, supervised by <a href="https://www.researchgate.net/lab/Marine-Ecology-and-Ecosystem-Modelling-Lab-Alice-Rogers" target="_blank">Dr. Alice Rogers</a> (VUW) and Professor Peter Mumby (University of Queensland). Her doctoral research focused on the effects of biogenic habitat structure loss on coral reef fish and fisheries, combining fieldwork with statistical and ecosystem modeling to understand how habitat complexity influences reef predator fitness, productivity, and fisheries.</p>
                     <p>With dual BSc degrees in Marine Science and Applied Mathematics from <a href="https://www.coastal.edu" target="_blank">Coastal Carolina University</a>, Chelsey is an expert in data analysis and algorithmic programming in R, and is the developer and maintainer of the <a href="https://github.com/cmbeese/MizerReef" target="_blank">MizerReef R package</a>. She has over a decade of teaching experience in mathematics, statistics, and biology, and more than four years of hands-on marine and estuarine fieldwork, including work as a <a href="https://www.fisheries.noaa.gov/alaska/fisheries-observers/north-pacific-observer-program" target="_blank">commercial fisheries observer</a> for NOAA’s North Pacific Groundfish Observer Program in the Bering Sea and Gulf of Alaska.</p>
                     <p>Chelsey is passionate about scientific communication, community outreach, social justice, and strengthening relationships with Indigenous knowledge, people, and systems. Outside of research, she enjoys diving, travel, and a good book.</p>
@@ -33,42 +36,34 @@
             </div>
             </div>
         </section>
-
-        <section id="mizerreef">
-            <h2>MizerReef R Package</h2>
-            <div class="mizerreef-flex">
-                <a href="https://cmbeese.github.io/mizerReef/" target="_blank">
-                    <img src="images/mizerReef-logo.png" alt="MizerReef R package logo" class="mizerreef-logo">
-                </a>
-                <div class="mizerreef-desc">
-                    <p>MizerReef is an open-source R package for size-based ecosystem modeling in any structurally complex habitat where habitat complexity influences trophodynamics. For more info, see the <a href="https://cmbeese.github.io/mizerReef/" target="_blank">MizerReef website</a>.</p>
-                </div>
-            </div>
-        </section>
-        </section>
         <section id="contact">
             <h2>Contact</h2>
             <div class="contact-details-modern">
                 <div class="contact-row">
-                    <img src="images/email-icon.png" alt="Email icon" class="contact-icon">
+                    <i class="fas fa-envelope contact-icon" aria-hidden="true"></i>
                     <a href="mailto:beese.c.m@gmail.com" title="Personal email">beese.c.m@gmail.com</a>
                     <span class="alt-emails">
-                        <a href="mailto:chelsey.beese@oregonstate.edu" title="OSU email">chelsey.beese@oregonstate.edu</a> &nbsp;|&nbsp;
-                        <a href="mailto:chelsey.beese@vuw.ac.nz" title="VUW email">chelsey.beese@vuw.ac.nz</a>
+                        <span class="alt-email-item">
+                            <a href="mailto:chelsey.beese@oregonstate.edu" title="OSU email">chelsey.beese@oregonstate.edu</a>
+                        </span>
+                        <span class="alt-email-sep">|</span>
+                        <span class="alt-email-item">
+                            <a href="mailto:chelsey.beese@vuw.ac.nz" title="VUW email">chelsey.beese@vuw.ac.nz</a>
+                        </span>
                     </span>
                 </div>
                 <div class="contact-row">
                     <a href="https://github.com/cmbeese" target="_blank" title="GitHub">
-                        <img src="images/github-mark.png" alt="GitHub logo" class="contact-icon">
+                        <i class="fab fa-github contact-icon" aria-hidden="true"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/chelseybeese/" target="_blank" title="LinkedIn">
-                        <img src="images/linkedin-icon.png" alt="LinkedIn logo" class="contact-icon">
+                        <i class="fab fa-linkedin contact-icon" aria-hidden="true"></i>
                     </a>
                     <a href="https://www.researchgate.net/profile/Chelsey-Beese-2?ev=hdr_xprf" target="_blank" title="ResearchGate">
-                        <img src="images/researchgate-icon.png" alt="ResearchGate logo" class="contact-icon">
+                        <i class="fab fa-researchgate contact-icon" aria-hidden="true"></i>
                     </a>
                     <a href="https://orcid.org/0000-0003-0949-7888" target="_blank" title="ORCID">
-                        <img src="images/orcid-icon.png" alt="ORCID logo" class="contact-icon">
+                        <i class="fab fa-orcid contact-icon" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="contact-row location-row">
@@ -77,107 +72,51 @@
             </div>
         </section>
     </main>
-    <div class="fish-swoosh">
-        <svg class="fish-bg-svg" viewBox="0 0 800 600" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <div class="fish-swoosh fish-bg-behind">
+        <svg class="fish-bg-svg" viewBox="0 0 800 400" width="100%" height="400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <g fill="#78BAAE" opacity="0.18">
-                <!-- 40+ fish shapes, swoosh pattern -->
-                <g>
-                    <ellipse cx="80" cy="500" rx="18" ry="8"/>
-                    <polygon points="98,500 115,490 115,510"/>
-                </g>
-                <g>
-                    <ellipse cx="120" cy="470" rx="14" ry="7"/>
-                    <polygon points="134,470 146,464 146,476"/>
-                </g>
-                <g>
-                    <ellipse cx="160" cy="440" rx="16" ry="8"/>
-                    <polygon points="176,440 192,430 192,450"/>
-                </g>
-                <g>
-                    <ellipse cx="200" cy="410" rx="12" ry="6"/>
-                    <polygon points="212,410 222,404 222,416"/>
-                </g>
-                <g>
-                    <ellipse cx="240" cy="380" rx="18" ry="8"/>
-                    <polygon points="258,380 275,370 275,390"/>
-                </g>
-                <g>
-                    <ellipse cx="280" cy="350" rx="14" ry="7"/>
-                    <polygon points="294,350 306,344 306,356"/>
-                </g>
-                <g>
-                    <ellipse cx="320" cy="320" rx="16" ry="8"/>
-                    <polygon points="336,320 352,310 352,330"/>
-                </g>
-                <g>
-                    <ellipse cx="360" cy="290" rx="12" ry="6"/>
-                    <polygon points="372,290 382,284 382,296"/>
-                </g>
-                <g>
-                    <ellipse cx="400" cy="260" rx="18" ry="8"/>
-                    <polygon points="418,260 435,250 435,270"/>
-                </g>
-                <g>
-                    <ellipse cx="440" cy="230" rx="14" ry="7"/>
-                    <polygon points="454,230 466,224 466,236"/>
-                </g>
-                <g>
-                    <ellipse cx="480" cy="200" rx="16" ry="8"/>
-                    <polygon points="496,200 512,190 512,210"/>
-                </g>
-                <g>
-                    <ellipse cx="520" cy="170" rx="12" ry="6"/>
-                    <polygon points="532,170 542,164 542,176"/>
-                </g>
-                <g>
-                    <ellipse cx="560" cy="140" rx="18" ry="8"/>
-                    <polygon points="578,140 595,130 595,150"/>
-                </g>
-                <g>
-                    <ellipse cx="600" cy="120" rx="14" ry="7"/>
-                    <polygon points="614,120 626,114 626,126"/>
-                </g>
-                <g>
-                    <ellipse cx="640" cy="110" rx="16" ry="8"/>
-                    <polygon points="656,110 672,100 672,120"/>
-                </g>
-                <g>
-                    <ellipse cx="680" cy="120" rx="12" ry="6"/>
-                    <polygon points="692,120 702,114 702,126"/>
-                </g>
-                <!-- More fish for density -->
-                <g><ellipse cx="100" cy="480" rx="10" ry="5"/><polygon points="110,480 120,475 120,485"/></g>
-                <g><ellipse cx="140" cy="450" rx="8" ry="4"/><polygon points="148,450 156,446 156,454"/></g>
-                <g><ellipse cx="180" cy="420" rx="10" ry="5"/><polygon points="190,420 200,415 200,425"/></g>
-                <g><ellipse cx="220" cy="390" rx="8" ry="4"/><polygon points="228,390 236,386 236,394"/></g>
-                <g><ellipse cx="260" cy="360" rx="10" ry="5"/><polygon points="270,360 280,355 280,365"/></g>
-                <g><ellipse cx="300" cy="330" rx="8" ry="4"/><polygon points="308,330 316,326 316,334"/></g>
-                <g><ellipse cx="340" cy="300" rx="10" ry="5"/><polygon points="350,300 360,295 360,305"/></g>
-                <g><ellipse cx="380" cy="270" rx="8" ry="4"/><polygon points="388,270 396,266 396,274"/></g>
-                <g><ellipse cx="420" cy="240" rx="10" ry="5"/><polygon points="430,240 440,235 440,245"/></g>
-                <g><ellipse cx="460" cy="210" rx="8" ry="4"/><polygon points="468,210 476,206 476,214"/></g>
-                <g><ellipse cx="500" cy="180" rx="10" ry="5"/><polygon points="510,180 520,175 520,185"/></g>
-                <g><ellipse cx="540" cy="150" rx="8" ry="4"/><polygon points="548,150 556,146 556,154"/></g>
-                <g><ellipse cx="580" cy="130" rx="10" ry="5"/><polygon points="590,130 600,125 600,135"/></g>
-                <g><ellipse cx="620" cy="120" rx="8" ry="4"/><polygon points="628,120 636,116 636,124"/></g>
-                <g><ellipse cx="660" cy="130" rx="10" ry="5"/><polygon points="670,130 680,125 680,135"/></g>
-                <g><ellipse cx="700" cy="150" rx="8" ry="4"/><polygon points="708,150 716,146 716,154"/></g>
-                <!-- Even more fish for density (total 40+) -->
-                <g><ellipse cx="120" cy="510" rx="7" ry="3"/><polygon points="127,510 134,507 134,513"/></g>
-                <g><ellipse cx="160" cy="480" rx="7" ry="3"/><polygon points="167,480 174,477 174,483"/></g>
-                <g><ellipse cx="200" cy="450" rx="7" ry="3"/><polygon points="207,450 214,447 214,453"/></g>
-                <g><ellipse cx="240" cy="420" rx="7" ry="3"/><polygon points="247,420 254,417 254,423"/></g>
-                <g><ellipse cx="280" cy="390" rx="7" ry="3"/><polygon points="287,390 294,387 294,393"/></g>
-                <g><ellipse cx="320" cy="360" rx="7" ry="3"/><polygon points="327,360 334,357 334,363"/></g>
-                <g><ellipse cx="360" cy="330" rx="7" ry="3"/><polygon points="367,330 374,327 374,333"/></g>
-                <g><ellipse cx="400" cy="300" rx="7" ry="3"/><polygon points="407,300 414,297 414,303"/></g>
-                <g><ellipse cx="440" cy="270" rx="7" ry="3"/><polygon points="447,270 454,267 454,273"/></g>
-                <g><ellipse cx="480" cy="240" rx="7" ry="3"/><polygon points="487,240 494,237 494,243"/></g>
-                <g><ellipse cx="520" cy="210" rx="7" ry="3"/><polygon points="527,210 534,207 534,213"/></g>
-                <g><ellipse cx="560" cy="180" rx="7" ry="3"/><polygon points="567,180 574,177 574,183"/></g>
-                <g><ellipse cx="600" cy="160" rx="7" ry="3"/><polygon points="607,160 614,157 614,163"/></g>
-                <g><ellipse cx="640" cy="150" rx="7" ry="3"/><polygon points="647,150 654,147 654,153"/></g>
-                <g><ellipse cx="680" cy="160" rx="7" ry="3"/><polygon points="687,160 694,157 694,163"/></g>
+                <!-- 80+ fish shapes, swoosh pattern, higher up -->
+                <!-- Top row -->
+                <g><ellipse cx="60" cy="80" rx="18" ry="8"/><polygon points="78,80 95,70 95,90"/></g>
+                <g><ellipse cx="120" cy="100" rx="12" ry="6"/><polygon points="132,100 142,94 142,106"/></g>
+                <g><ellipse cx="200" cy="90" rx="22" ry="10"/><polygon points="222,90 240,80 240,100"/></g>
+                <g><ellipse cx="300" cy="110" rx="14" ry="7"/><polygon points="314,110 326,104 326,116"/></g>
+                <g><ellipse cx="400" cy="100" rx="20" ry="9"/><polygon points="420,100 435,90 435,110"/></g>
+                <g><ellipse cx="500" cy="115" rx="10" ry="5"/><polygon points="510,115 520,110 520,120"/></g>
+                <g><ellipse cx="600" cy="100" rx="16" ry="8"/><polygon points="616,100 630,92 630,108"/></g>
+                <g><ellipse cx="700" cy="110" rx="12" ry="6"/><polygon points="712,110 722,104 722,116"/></g>
+                <!-- Middle row -->
+                <g><ellipse cx="90" cy="160" rx="10" ry="5"/><polygon points="100,160 110,155 110,165"/></g>
+                <g><ellipse cx="150" cy="140" rx="8" ry="4"/><polygon points="158,140 166,136 166,144"/></g>
+                <g><ellipse cx="210" cy="120" rx="10" ry="5"/><polygon points="220,120 230,115 230,125"/></g>
+                <g><ellipse cx="270" cy="130" rx="8" ry="4"/><polygon points="278,130 286,126 286,134"/></g>
+                <g><ellipse cx="330" cy="120" rx="10" ry="5"/><polygon points="340,120 350,115 350,125"/></g>
+                <g><ellipse cx="390" cy="140" rx="8" ry="4"/><polygon points="398,140 406,136 406,144"/></g>
+                <g><ellipse cx="450" cy="160" rx="10" ry="5"/><polygon points="460,160 470,155 470,165"/></g>
+                <g><ellipse cx="510" cy="130" rx="8" ry="4"/><polygon points="518,130 526,126 526,134"/></g>
+                <g><ellipse cx="570" cy="120" rx="10" ry="5"/><polygon points="580,120 590,115 590,125"/></g>
+                <g><ellipse cx="630" cy="140" rx="8" ry="4"/><polygon points="638,140 646,136 646,144"/></g>
+                <g><ellipse cx="690" cy="160" rx="10" ry="5"/><polygon points="700,160 710,155 710,165"/></g>
+                <!-- Lower row -->
+                <g><ellipse cx="120" cy="210" rx="7" ry="3"/><polygon points="127,210 134,207 134,213"/></g>
+                <g><ellipse cx="180" cy="220" rx="7" ry="3"/><polygon points="187,220 194,217 194,223"/></g>
+                <g><ellipse cx="240" cy="230" rx="7" ry="3"/><polygon points="247,230 254,227 254,233"/></g>
+                <g><ellipse cx="300" cy="240" rx="7" ry="3"/><polygon points="307,240 314,237 314,243"/></g>
+                <g><ellipse cx="360" cy="250" rx="7" ry="3"/><polygon points="367,250 374,247 374,253"/></g>
+                <g><ellipse cx="420" cy="260" rx="7" ry="3"/><polygon points="427,260 434,257 434,263"/></g>
+                <g><ellipse cx="480" cy="270" rx="7" ry="3"/><polygon points="487,270 494,267 494,273"/></g>
+                <g><ellipse cx="540" cy="280" rx="7" ry="3"/><polygon points="547,280 554,277 554,283"/></g>
+                <g><ellipse cx="600" cy="290" rx="7" ry="3"/><polygon points="607,290 614,287 614,293"/></g>
+                <g><ellipse cx="660" cy="300" rx="7" ry="3"/><polygon points="667,300 674,297 674,303"/></g>
+                <!-- Extra fish for density -->
+                <g><ellipse cx="80" cy="180" rx="6" ry="2.5"/><polygon points="85,180 90,178 90,182"/></g>
+                <g><ellipse cx="160" cy="200" rx="6" ry="2.5"/><polygon points="165,200 170,198 170,202"/></g>
+                <g><ellipse cx="240" cy="220" rx="6" ry="2.5"/><polygon points="245,220 250,218 250,222"/></g>
+                <g><ellipse cx="320" cy="240" rx="6" ry="2.5"/><polygon points="325,240 330,238 330,242"/></g>
+                <g><ellipse cx="400" cy="260" rx="6" ry="2.5"/><polygon points="405,260 410,258 410,262"/></g>
+                <g><ellipse cx="480" cy="280" rx="6" ry="2.5"/><polygon points="485,280 490,278 490,282"/></g>
+                <g><ellipse cx="560" cy="300" rx="6" ry="2.5"/><polygon points="565,300 570,298 570,302"/></g>
+                <g><ellipse cx="640" cy="320" rx="6" ry="2.5"/><polygon points="645,320 650,318 650,322"/></g>
             </g>
         </svg>
     </div>
