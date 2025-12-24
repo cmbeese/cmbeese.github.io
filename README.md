@@ -1,23 +1,30 @@
-# Personal Website for GitHub Pages
+# Personal Website — Jekyll + Hydejack
 
-This is a simple, modern static website template you can use for your personal site and host for free with GitHub Pages.
+This site uses the Hydejack theme via Jekyll's `remote_theme`, configured to be compatible with GitHub Pages.
 
-## How to Deploy to GitHub Pages
+## Deployment (GitHub Pages)
+- Push changes to the `main` branch. GitHub Pages will build and publish automatically.
+- Ensure `_config.yml` contains `remote_theme: hydecorp/hydejack@v9` and does NOT set `theme:`.
+- `Gemfile` should use `github-pages` (no `jekyll-theme-hydejack`).
 
-1. **Create a GitHub repository**
-   - Name it as `your-username.github.io` (replace `your-username` with your GitHub username).
-2. **Push your website files**
-   - Upload all files (including `index.html` and `style.css`) to the repository.
-3. **Enable GitHub Pages**
-   - Go to the repository settings on GitHub.
-   - Scroll to the "Pages" section.
-   - Set the source branch to `main` (or `master`) and the root folder.
-   - Save. Your site will be live at `https://your-username.github.io`.
+## Local Development (Windows)
+1. Install Ruby and Bundler.
+2. Install dependencies:
 
-## Customization
-- Edit `index.html` and `style.css` to personalize your site.
-- Replace the About section with your own information.
+```powershell
+bundle install
+```
 
----
+3. Run the site locally:
 
-*This project is ready for deployment on GitHub Pages. For more details, see the [GitHub Pages documentation](https://docs.github.com/en/pages).*
+```powershell
+bundle exec jekyll serve
+```
+
+- Open http://localhost:4000 to view the site.
+
+## Troubleshooting
+- Build error: "The jekyll-theme-hydejack theme could not be found" → remove `theme:` from `_config.yml`, keep `remote_theme`, and use `github-pages` in `Gemfile`.
+- If `jekyll serve` fails on Ruby ≥ 3.0, ensure `webrick` is installed (already included in `Gemfile`).
+
+For more details, see Jekyll and Hydejack documentation.

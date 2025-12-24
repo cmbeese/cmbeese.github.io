@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: home
 title: Home
-permalink: /
 ---
 
 # Welcome to Chelsey M. Beese's Website!
