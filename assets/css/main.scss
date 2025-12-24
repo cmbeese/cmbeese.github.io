@@ -58,6 +58,32 @@ h4, h5, h6 {
   color: var(--orange-3) !important;
 }
 
+// Swatch styles for palettes page
+.swatch-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem;
+}
+.swatch {
+  width: 120px;
+  height: 64px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.swatch-label {
+  position: absolute;
+  bottom: 6px;
+  left: 8px;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--navy);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
 .content {
   background: white !important;
   color: var(--navy) !important;
