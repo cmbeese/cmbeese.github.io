@@ -1,0 +1,41 @@
+// Custom color overrides for Hydejack theme
+// Orange and Blue color scheme
+
+// Orange colors
+$orange-1: #FE3E00;   // Red-Orange
+$orange-2: #FDB36A;   // Orange
+$orange-3: #FF751C;   // Bold Orange
+$orange-4: #F4845F;   // Coral
+$orange-5: #F9A03F;   // Muted Orange
+$orange-light: #FFF3E0;
+$orange-dark: #2B2D42;
+
+// Blue colors
+$blue-main: #016FA0;
+$blue-alt: #00769E;
+
+// Override Hydejack theme variables
+$theme-color: $blue-main !default;
+$accent-color: $orange-1 !default;
+
+// Link colors
+$link-color: $blue-main !default;
+$link-hover-color: $blue-alt !default;
+
+// Heading colors
+$heading-color: $orange-dark !default;
+
+// Background and text
+$body-bg: #ffffff !default;
+$body-color: #333 !default;
+
+// Sidebar
+$sidebar-bg: linear-gradient(to bottom, $blue-main, $blue-alt) !default;
+
+// Buttons and interactive elements
+$btn-primary-bg: $orange-1 !default;
+$btn-primary-hover-bg: $orange-3 !default;
+
+// Navigation
+$nav-link-color: $blue-main !default;
+$nav-link-hover-color: $orange-1 !default;

@@ -1,0 +1,136 @@
+# Site settings
+lang: en
+title: Chelsey M. Beese, Ph.D.
+description: >
+  Marine scientist, ecosystem modeler, and science communicator
+
+# Build settings
+theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9
+
+# Sidebar image and theme colors
+accent_image:
+  background: 'linear-gradient(to bottom, #FE3E00, #FF751C)'
+  overlay: false
+
+accent_color: '#FE3E00'
+theme_color: '#016FA0'
+invert_sidebar: false
+
+# Author information
+author:
+  name: Chelsey M. Beese
+  email: beese.c.m@gmail.com
+  email_osu: chelsey.beese@oregonstate.edu
+  email_vuw: chelsey.beese@vuw.ac.nz
+  about: |
+    Marine scientist, ecosystem modeler, and science communicator. 
+    Dive in to learn about my research, teaching, and adventures in marine science!
+
+# Social media links (add your accounts)
+social:
+  name: Chelsey M. Beese
+  links:
+    - https://github.com/cmbeese
+    # Add other social links here
+
+# Navigation
+menu:
+  - title: About
+    url: /about/
+  - title: CV
+    url: /cv/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: Gallery
+    url: /gallery/
+  - title: MizerReef
+    url: /mizerreef/
+
+# Permalink structure
+permalink: /:categories/:year-:month-:day-:title/
+
+# Pagination
+paginate: 10
+paginate_path: /blog/:num/
+
+# Collections
+collections:
+  projects:
+    permalink: /projects/:path/
+    output: true
+
+# Hydejack settings
+hydejack:
+  post_addons: []
+  project_addons: []
+
+# Global inline CSS to apply palette across all pages
+inline_css: |
+  :root {
+    --navy: #001E5A;
+    --blue-1: #016FA0;
+    --blue-2: #00769E;
+    --teal-1: #0295A7;
+    --teal-2: #4E988A;
+    --teal-3: #78BAAE;
+    --cyan: #01C4DA;
+    --cream: #FFEDBF;
+    --orange-1: #FDB36A;
+    --orange-2: #FF751C;
+    --orange-3: #FE3E00;
+  }
+
+  /* Sidebar and navigation */
+  .sidebar, .sidebar-bg, .sidebar-sticky { background: linear-gradient(to bottom, var(--orange-3), var(--orange-2)) !important; }
+  .site-title, .site-subtitle { color: white !important; }
+
+  /* Typography and links */
+  body { color: var(--navy) !important; }
+  a { color: var(--blue-1) !important; }
+  a:hover, a:focus { color: var(--orange-3) !important; }
+  h1, h2, h3 { color: var(--navy) !important; }
+  h4, h5, h6 { color: var(--blue-1) !important; }
+  .page-title, .post-title { color: var(--orange-3) !important; }
+
+  /* Content containers */
+  .content, .page, .post, main, article, .markdown-body { background: white !important; color: var(--navy) !important; }
+  p, li, td, th, blockquote, span, div { color: var(--navy) !important; }
+
+  /* Buttons */
+  .btn, .btn-primary, .btn-sm { background: var(--orange-3) !important; border-color: var(--orange-3) !important; color: white !important; }
+  .btn:hover, .btn:focus, .btn-primary:hover { background: var(--orange-2) !important; border-color: var(--orange-2) !important; }
+
+# Disable loading from CDN
+no_google_fonts: false
+no_push_state: false
+no_drawer: false
+no_navbar: false
+no_search: false
+no_inline_css: false
+no_page_style: false
+no_copy_btn: false
+no_toc: false
+no_break_layout: true
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE.md
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - website-roadmap.txt
+  - website-todo.txt
+  - "*.html"
+  - about.html
+  - cv.html
+  - dashboard.html
+  - gallery.html
+  - mizerreef.html
+  - projects.html
+  - publications.html
+  - index-old.html
