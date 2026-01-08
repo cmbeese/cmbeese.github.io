@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "publications.html#peer-reviewed-publications",
+    "href": "publications.html#peer-reviewed-publications",
+    "title": "Publications",
+    "section": "Peer-Reviewed Publications",
+    "text": "Peer-Reviewed Publications\n\n\nBeese, Chelsey M., Peter J. Mumby, and Alice Rogers. 2023. “Small‐scale Habitat Complexity Preserves Ecosystem Services on Coral Reefs.” Journal of Applied Ecology 60 (9): 1854–67. https://doi.org/10.1111/1365-2664.14458.\n\n\nCarrington, Victoria G., Yvan Papa, Chelsey M. Beese, Jessica Hall, Raphaël Covain, Peter Horn, Monique A. Ladds, and Alice Rogers. 2021. “How Functionally Diverse Are Fish in the Deep? A Comparison of Fish Communities in Deep and Shallow‐water Systems.” Edited by Darren Yeo. Diversity and Distributions 27 (7): 1208–23. https://doi.org/10.1111/ddi.13268."
+  },
+  {
+    "objectID": "publications.html#conference-presentations",
+    "href": "publications.html#conference-presentations",
+    "title": "Publications",
+    "section": "Conference Presentations",
+    "text": "Conference Presentations\n\n2024\nAMSA & NZMSS Joint Conference — Speed Talk\n\nIntroducing MizerReef: a new tool to support management from degradation to decision-making\n Hobart, Tasmania, Australia\n🏆 Winner: NZMSS Best Student Speed Talk\n\n\n\n2023\nNZMSS Annual Conference — Talk\n\nSmall-scale habitat complexity preserves ecosystem services on coral reefs\n Wellington, New Zealand\n\n\n\n2021\nNZMSS Annual Conference — Talk\n\nRefuge and the Reef: is all habitat structure created equal?\n Tauranga, New Zealand\n\n\n\n2014\nMAA & AMS Joint Meetings — Poster\n\nAn Agent-based Model for a Caribbean Coral Reef\n Baltimore, Maryland, USA\n\nAMS Regional Meeting — Talk\n\nAgent-based Modelling for Caribbean Coral Reef Management\n Atlanta, Georgia, USA"
+  },
+  {
+    "objectID": "mizerreef.html#an-r-package-for-coral-reef-ecosystem-modeling",
+    "href": "mizerreef.html#an-r-package-for-coral-reef-ecosystem-modeling",
+    "title": "MizerReef",
+    "section": "An R Package for Coral Reef Ecosystem Modeling",
+    "text": "An R Package for Coral Reef Ecosystem Modeling\nMizerReef is an extension of the mizer package for modeling size-structured fish communities, specifically adapted for coral reef ecosystems.\n\nFeatures\n\nSize-structured multispecies modeling for coral reefs\nIntegration with coral reef habitat complexity data\nFisheries management scenario testing\nClimate change impact assessment\n\n\n\nInstallation\n# Install from GitHub\ndevtools::install_github(\"cmbeese/MizerReef\")\n\n\nResources\n\nGitHub Repository\nDocumentation (coming soon)\nTutorials (coming soon)"
+  },
+  {
+    "objectID": "mizerreef.html#related-publications",
+    "href": "mizerreef.html#related-publications",
+    "title": "MizerReef",
+    "section": "Related Publications",
+    "text": "Related Publications\nAdd publications that use or describe MizerReef"
+  },
+  {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "Field & Underwater Photography\n\n\n\n\nColorful coral reef in the Maldives\n\n\n\n\n\nSharks swimming in the Maldives\n\n\n\n\n\nNurse shark resting on sandy bottom\n\n\n\n\n\nShark gliding through blue water\n\n\n\n\n\nUnderwater scene in the Maldives\n\n\n\n\n\nGroup of stingrays on sandy seafloor\n\n\n\n\n\nClose-up of a stingray\n\n\n\n\n\nStingray swimming near the bottom\n\n\n\n\n\nStingray with distinctive markings\n\n\n\n\n\nSchool of fish underwater\n\n\n\n\n\nKelp forest swaying in the current\n\n\n\n\n\nSeals resting on rocks\n\n\n\n\n\nLarge school of fish swimming together\n\n\n\n\n\nRocky coastline of Wellington’s south coast"
+  },
+  {
+    "objectID": "contact.html#get-in-touch",
+    "href": "contact.html#get-in-touch",
+    "title": "Contact",
+    "section": "Get in touch",
+    "text": "Get in touch\n\n\nOSU: chelsey.beese@oregonstate.edu\nVUW: chelsey.beese@vuw.ac.nz\nCorresponding/author: beese.c.m@gmail.com\nPersonal: shellsea.beese@gmail.com\n\n\n\nConnect\n\nLinkedIn\nORCID\nResearchGate\nGoogle Scholar\n\nFeel free to email the author address for collaborations, manuscripts, or data/model requests; use OSU/VUW for institutional matters."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Chelsey is a marine scientist specializing in interdisciplinary research and ecosystem modeling. She is a postdoctoral scholar with the Integrated Marine Fisheries Lab at Oregon State University, working with Dr. Cheryl Barnes (OSU) and Dr. Jon Reum (NOAA) to advance NOAA’s Alaska (ACLIM) and Gulf of Alaska (GOACLIM) Climate Integrated Modeling projects. Her work integrates ecological modeling and climate science to understand how changing oceans shape North Pacific ecosystems and fisheries.\nShe also works part time with the Marine Ecology and Ecosystem Modelling Lab under Dr. Alice Rogers at Victoria University of Wellington on the project “Uncovering the functioning and importance of temperate mesophotic ecosystems” funded by the Marsden Fund, combining ecosystem models with field data to illuminate these understudied habitats.\nChelsey completed her Ph.D. in Marine Biology at Te Herenga Waka – Victoria University of Wellington, supervised by Dr. Alice Rogers and Prof. Peter Mumby, who directs the Marine Spatial Ecology Lab at the University of Queensland. Her doctoral work examined how loss of biogenic habitat structure affects coral reef fish and fisheries, blending field surveys with statistical and ecosystem modeling to link habitat complexity to predator fitness, productivity, and fisheries outcomes.\nWith dual BSc degrees in Marine Science and Applied Mathematics from Coastal Carolina University, Chelsey is an experienced data analyst and programmer in R. She develops and maintains the MizerReef R package and has 10+ years of teaching in mathematics, statistics, and biology. She also has 4+ years of experience in marine and estuarine fieldwork, including service as a commercial fisheries observer for NOAA’s North Pacific Groundfish Observer Program in the Bering Sea and Gulf of Alaska.\nChelsey is passionate about science communication, community outreach, social justice, and strengthening relationships with Indigenous knowledge, people, and systems. Outside of research, she enjoys diving, travel, and a good book."
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "Experience",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n Postdoctoral Scholar Current Oregon State University | Corvallis, OR, USA\n\nWorking with Dr. Cheryl Barnes and Dr. Jon Reum (NOAA) on ACLIM and GOACLIM projects. Responsibilities include ecosystem modeling and climate science integration to understand how changing oceans shape North Pacific ecosystems and fisheries.\n\n\n Research Assistant May 2025 – Current Victoria University of Wellington | Wellington, NZ\n\nAdapting and extending ecosystem models on a Marsden-funded project investigating temperate mesophotic sponge reefs. Focus on incorporating detrital dynamics to improve understanding of trophic pathways and support conservation planning.\n\n\n Data Analyst Aug 2024 – Jul 2025 Department of Conservation | Wellington, NZ\n\nSupported marine reserve monitoring efforts. Analyzed baited underwater video (BUV) footage, managed data entry, prepared reports, and conducted preliminary statistical analyses.\n\n\n PhD Researcher & Teaching Assistant Dec 2018 – Sep 2024 Victoria University of Wellington | Wellington, NZ\n\nLed PhD project on coral reef ecosystem modelling. Concurrently taught 17 trimesters in statistics, biology, and ecology courses. Responsibilities included project management, data analysis, scientific writing, course development, student mentoring, and lab/fieldwork supervision.\n\n\n North Pacific Fisheries Observer Apr 2015 – Oct 2018 NOAA Fisheries / Alaskan Observers, Inc. | Seattle, WA, USA\n\nCompleted 12 deployments totalling 405 sea days aboard commercial fishing vessels in the Bering Sea and Gulf of Alaska. Designed sampling protocols, collected catch and biological data, monitored regulatory compliance, and liaised among regulators, fishing crews, captains, and Coast Guard."
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Experience",
+    "section": "Education",
+    "text": "Education\n Ph.D. in Marine Biology July 2024 Te Herenga Waka – Victoria University of Wellington\n\nModelling Coral Reef Futures: Exploring the role of structural complexity in sustaining ecosystem services | DOI"
+  },
+  {
+    "objectID": "cv.html#technical-skills",
+    "href": "cv.html#technical-skills",
+    "title": "Experience",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nExpert Intermediate Basic\n\n\nR Data Analysis Statistical Analysis Data Visualization Ecosystem Modeling Technical Writing Project Management  LaTeX MATLAB Microsoft Office R Package Development Policy Analysis Science Communication  Python Quality Control Stakeholder Engagement PADI Rescue Diver First Aid & Oxygen Admin"
+  },
+  {
+    "objectID": "cv.html#teaching-mentoring",
+    "href": "cv.html#teaching-mentoring",
+    "title": "Experience",
+    "section": "Teaching & Mentoring",
+    "text": "Teaching & Mentoring\n University Instructor 2019 Victoria University of Wellington | Wellington, NZ\n\nTaught across 17 trimesters in statistics, biology, and ecology courses. Responsibilities included developing and delivering course materials, mentoring students across diverse backgrounds, supervising laboratory and field activities, and marking assessments. Developed expertise in making quantitative concepts accessible to diverse student cohorts."
+  },
+  {
+    "objectID": "cv.html#leadership-advocacy",
+    "href": "cv.html#leadership-advocacy",
+    "title": "Experience",
+    "section": "Leadership & Advocacy",
+    "text": "Leadership & Advocacy\n Founding Member 2021 – 2024 Te Pitau Mātauranga (TPM) Postgraduate Student Advocacy Group | Victoria University of Wellington\n\nLed initiatives assessing and improving postgraduate student wellbeing across a diverse cohort. Designed and analysed surveys to identify systemic issues and collaborated with university leadership to implement targeted improvements. Coordinated onboarding, peer support, and inclusive community-building events.\n\n\nFor a complete list of publications and conference presentations, see the Publications page."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Chelsey M. Beese, Ph.D.\n\n\nMarine Scientist | Ecosystem Modeler | Science Communicator\n\n\n\n\n\nAbout Me\n\n\nExperience\n\n\nPublications\n\n\nCurrentProjects\n\n\nMizerReef\n\n\nGallery"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Current Projects",
+    "section": "",
+    "text": "Alaska Climate Integrated Modeling (ACLIM) & Gulf of Alaska CLIM\nWorking as a postdoctoral scholar with the Integrated Marine Fisheries Lab at Oregon State University to advance NOAA’s climate-integrated ecosystem modeling initiatives for North Pacific fisheries. These projects integrate climate projections with ecosystem models to understand how changing ocean conditions—including temperature, acidification, and productivity shifts—affect fish populations, community structure, and fisheries management strategies in the Bering Sea and Gulf of Alaska.\nThe work combines statistical modeling, time-series analysis, and dynamic ecosystem simulations to provide science-based advice for sustainable fisheries management under climate change. This research directly supports the North Pacific Fishery Management Council in developing climate-informed management approaches.\nCollaborators: Dr. Cheryl Barnes (OSU), Dr. Jon Reum (NOAA Alaska Fisheries Science Center)\nFunding: NOAA Fisheries\nLearn more: ACLIM Project | GOACLIM Project"
+  },
+  {
+    "objectID": "projects.html#noaa-climate-integrated-modeling",
+    "href": "projects.html#noaa-climate-integrated-modeling",
+    "title": "Current Projects",
+    "section": "",
+    "text": "Alaska Climate Integrated Modeling (ACLIM) & Gulf of Alaska CLIM\nWorking as a postdoctoral scholar with the Integrated Marine Fisheries Lab at Oregon State University to advance NOAA’s climate-integrated ecosystem modeling initiatives for North Pacific fisheries. These projects integrate climate projections with ecosystem models to understand how changing ocean conditions—including temperature, acidification, and productivity shifts—affect fish populations, community structure, and fisheries management strategies in the Bering Sea and Gulf of Alaska.\nThe work combines statistical modeling, time-series analysis, and dynamic ecosystem simulations to provide science-based advice for sustainable fisheries management under climate change. This research directly supports the North Pacific Fishery Management Council in developing climate-informed management approaches.\nCollaborators: Dr. Cheryl Barnes (OSU), Dr. Jon Reum (NOAA Alaska Fisheries Science Center)\nFunding: NOAA Fisheries\nLearn more: ACLIM Project | GOACLIM Project"
+  },
+  {
+    "objectID": "projects.html#temperate-mesophotic-ecosystems",
+    "href": "projects.html#temperate-mesophotic-ecosystems",
+    "title": "Current Projects",
+    "section": "Temperate Mesophotic Ecosystems",
+    "text": "Temperate Mesophotic Ecosystems\n\nUncovering the functioning and importance of temperate mesophotic ecosystems\nPart-time collaboration with the Marine Ecology and Ecosystem Modelling Lab at Victoria University of Wellington on a Marsden Fund-supported project investigating temperate mesophotic reefs (30-150m depth). These twilight-zone ecosystems remain poorly understood despite potentially serving as critical refugia for marine biodiversity and contributing to fisheries productivity.\nThe project combines ROV surveys, fish community data, and ecosystem modeling to quantify how mesophotic habitats support fish populations and connect to shallower reef systems. By integrating empirical field data with size-structured models, we’re exploring how depth gradients, light availability, and habitat complexity shape community dynamics and ecosystem services in New Zealand’s temperate waters.\nPI: Dr. Alice Rogers (Victoria University of Wellington)\nFunding: Royal Society Te Apārangi Marsden Fund\nDuration: 2023-2026"
+  },
+  {
+    "objectID": "projects.html#mizerreef-r-package",
+    "href": "projects.html#mizerreef-r-package",
+    "title": "Current Projects",
+    "section": "MizerReef R Package",
+    "text": "MizerReef R Package\n\nOpen-source ecosystem modeling tool for coral reef fisheries\nDeveloping and maintaining MizerReef, an open-source R package that extends the mizer framework for size-structured multispecies modeling to coral reef ecosystems. The package enables researchers and managers to explore complex relationships between habitat structure, predator-prey dynamics, fish community composition, and fisheries outcomes.\nMizerReef incorporates coral reef-specific processes including: - Habitat complexity effects on predator-prey interactions - Benthic-pelagic coupling - Spatial heterogeneity in reef structure - Fisheries selectivity patterns for reef species - Climate impacts on habitat and productivity\nThe tool supports scenario testing for fisheries management, habitat restoration, and climate adaptation strategies. It’s designed to be accessible for both research and applied management contexts, with extensive documentation and example applications.\nStatus: Active development and maintenance\nRepository: github.com/cmbeese/MizerReef\nBase Framework: Mizer (Blanchard et al. 2014)\nApplications: PhD dissertation research, fisheries management scenario testing, coral reef conservation planning"
+  },
+  {
+    "objectID": "gallery.html#maldives",
+    "href": "gallery.html#maldives",
+    "title": "Gallery",
+    "section": "Maldives",
+    "text": "Maldives\n\n\n\n\nColorful coral reef in the Maldives\n\n\n\n\n\nSharks swimming in the Maldives\n\n\n\n\n\nNurse shark resting on sandy bottom\n\n\n\n\n\nShark gliding through blue water\n\n\n\n\n\nUnderwater scene in the Maldives"
+  },
+  {
+    "objectID": "gallery.html#pacific-palaukelp-forests",
+    "href": "gallery.html#pacific-palaukelp-forests",
+    "title": "Gallery",
+    "section": "Pacific (Palau/Kelp Forests)",
+    "text": "Pacific (Palau/Kelp Forests)\n\n\n\n\nGroup of stingrays on sandy seafloor\n\n\n\n\n\nClose-up of a stingray\n\n\n\n\n\nStingray swimming near the bottom\n\n\n\n\n\nStingray with distinctive markings\n\n\n\n\n\nSchool of fish underwater\n\n\n\n\n\nKelp forest swaying in the current"
+  },
+  {
+    "objectID": "gallery.html#new-zealand",
+    "href": "gallery.html#new-zealand",
+    "title": "Gallery",
+    "section": "New Zealand",
+    "text": "New Zealand\n\n\n\n\nLarge school of fish swimming together\n\n\n\n\n\nRocky coastline of Wellington’s south coast"
+  },
+  {
+    "objectID": "gallery.html#poor-knights-island-new-zealand",
+    "href": "gallery.html#poor-knights-island-new-zealand",
+    "title": "Gallery",
+    "section": "Poor Knights Island, New Zealand",
+    "text": "Poor Knights Island, New Zealand\n\n\n\n\nGroup of stingrays on sandy seafloor\n\n\n\n\n\nClose-up of a stingray\n\n\n\n\n\nStingray swimming near the bottom\n\n\n\n\n\nStingray with distinctive markings\n\n\n\n\n\nSchool of fish underwater\n\n\n\n\n\nKelp forest swaying in the current"
+  },
+  {
+    "objectID": "gallery.html#alaska",
+    "href": "gallery.html#alaska",
+    "title": "Gallery",
+    "section": "Alaska",
+    "text": "Alaska\n\n\n\n\nSeals resting on rocks"
+  }
+]

@@ -3,11 +3,66 @@ title: Publications
 bibliography: my-pubs.bib
 nocite: |
   @*
+toc: false
 ---
+
+::: {=html}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+:::
+
+::: {.column-screen style="padding: 0; margin-top: 0"}
+![](images/whale-banner-3.jpg){.banner fig-align="center"}
+:::
 
 # Publications
 
-The full list below is generated from `my-pubs.bib`.
+## Peer-Reviewed Publications
 
-## References
+::: {#refs}
+:::
+
+<div style="margin-top: 3rem;"></div>
+
+## Conference Presentations
+
+### 2024
+
+**AMSA & NZMSS Joint Conference** — Speed Talk
+
+> *Introducing MizerReef: a new tool to support management from degradation to decision-making*
+> 
+> <i class="ai ai-map"></i> Hobart, Tasmania, Australia
+> 
+> 🏆 Winner: NZMSS Best Student Speed Talk
+
+### 2023
+
+**NZMSS Annual Conference** — Talk
+
+> *Small-scale habitat complexity preserves ecosystem services on coral reefs*
+> 
+> <i class="ai ai-map"></i> Wellington, New Zealand
+
+### 2021
+
+**NZMSS Annual Conference** — Talk
+
+> *Refuge and the Reef: is all habitat structure created equal?*
+> 
+> <i class="ai ai-map"></i> Tauranga, New Zealand
+
+### 2014
+
+**MAA & AMS Joint Meetings** — Poster
+
+> *An Agent-based Model for a Caribbean Coral Reef*
+> 
+> <i class="ai ai-map"></i> Baltimore, Maryland, USA
+
+**AMS Regional Meeting** — Talk
+
+> *Agent-based Modelling for Caribbean Coral Reef Management*
+> 
+> <i class="ai ai-map"></i> Atlanta, Georgia, USA
+
 

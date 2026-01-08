@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CV – Chelsey M. Beese</title>
+<title>Experience</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,14 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fc7cc9eb68d4cc25b4f77f3bdca4ebaa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,171 +72,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles-palette.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -248,9 +83,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Chelsey M. Beese</span>
+    <img src="./images/resumeLetterIndigo.png" alt="" class="navbar-logo light-content">
+    <img src="./images/resumeLetterIndigo.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -258,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
@@ -269,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./cv.html" aria-current="page"> 
-<span class="menu-text">CV</span></a>
+<span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
@@ -277,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+<span class="menu-text">Current Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./gallery.html"> 
@@ -288,13 +122,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">MizerReef</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./palettes.html"> 
-<span class="menu-text">Palettes</span></a>
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -303,28 +136,13 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#curriculum-vitae" id="toc-curriculum-vitae" class="nav-link active" data-scroll-target="#curriculum-vitae">Curriculum Vitae</a>
-  <ul class="collapse">
-  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
-  <li><a href="#current-positions" id="toc-current-positions" class="nav-link" data-scroll-target="#current-positions">Current Positions</a></li>
-  <li><a href="#skills" id="toc-skills" class="nav-link" data-scroll-target="#skills">Skills</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CV</h1>
+<h1 class="title">Experience</h1>
 </div>
 
 
@@ -341,63 +159,91 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="curriculum-vitae" class="level1">
-<h1>Curriculum Vitae</h1>
+<div class="page-columns page-full" style="padding: 0; margin-top: 0">
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p class="page-columns page-full"><img src="images/alaska-banner.png" class="banner img-fluid quarto-figure quarto-figure-center figure-img column-screen"></p>
+</figure>
+</div>
+</div>
+<section id="professional-experience" class="level2">
+<h2 class="anchored" data-anchor-id="professional-experience">Professional Experience</h2>
+<p><strong><i class="fas fa-flask-vial"></i> Postdoctoral Scholar</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Current</span><br> <a href="https://marinesciences.oregonstate.edu/">Oregon State University</a> | Corvallis, OR, USA</p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p>Working with <a href="https://marineresearch.oregonstate.edu/users/cheryl-barnes">Dr.&nbsp;Cheryl Barnes</a> and Dr.&nbsp;Jon Reum (<a href="https://www.fisheries.noaa.gov/">NOAA</a>) on <a href="https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project">ACLIM</a> and <a href="https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project">GOACLIM</a> projects. Responsibilities include ecosystem modeling and climate science integration to understand how changing oceans shape North Pacific ecosystems and fisheries.</p>
+</div>
+<hr>
+<p><strong><i class="fas fa-flask-vial"></i> Research Assistant</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">May 2025 – Current</span><br> <a href="https://www.wgtn.ac.nz">Victoria University of Wellington</a> | Wellington, NZ</p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p>Adapting and extending ecosystem models on a <a href="https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/">Marsden-funded project</a> investigating temperate mesophotic sponge reefs. Focus on incorporating detrital dynamics to improve understanding of trophic pathways and support conservation planning.</p>
+</div>
+<hr>
+<p><strong><i class="fas fa-chart-line"></i> Data Analyst</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Aug 2024 – Jul 2025</span><br> <a href="https://www.doc.govt.nz/">Department of Conservation</a> | Wellington, NZ</p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p>Supported marine reserve monitoring efforts. Analyzed baited underwater video (BUV) footage, managed data entry, prepared reports, and conducted preliminary statistical analyses.</p>
+</div>
+<hr>
+<p><strong><i class="fas fa-flask-vial"></i> PhD Researcher &amp; Teaching Assistant</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Dec 2018 – Sep 2024</span><br> <a href="https://www.wgtn.ac.nz">Victoria University of Wellington</a> | Wellington, NZ</p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p>Led PhD project on coral reef ecosystem modelling. Concurrently taught 17 trimesters in statistics, biology, and ecology courses. Responsibilities included project management, data analysis, scientific writing, course development, student mentoring, and lab/fieldwork supervision.</p>
+</div>
+<hr>
+<p><strong><i class="fas fa-fish"></i> North Pacific Fisheries Observer</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Apr 2015 – Oct 2018</span><br> <a href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a> / Alaskan Observers, Inc.&nbsp;| Seattle, WA, USA</p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p>Completed 12 deployments totalling 405 sea days aboard commercial fishing vessels in the Bering Sea and Gulf of Alaska. Designed sampling protocols, collected catch and biological data, monitored regulatory compliance, and liaised among regulators, fishing crews, captains, and Coast Guard.</p>
+</div>
+<!-- ---
+
+**<i class="fas fa-fish"></i> Husbandry Intern** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Jun 2014 – Aug 2014</span>
+[Flying Sharks](https://flyingsharks.eu/) | Peniche & Faial, Portugal
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Supported live transport operations and aquarium care at Aquário de Porto Pim. Participated in collection dives, performed husbandry tasks, and assisted with animal health checks and life support systems.
+:::
+
+--- -->
+</section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
-<p><strong>Ph.D.&nbsp;in Marine Biology</strong><br>
-Victoria University of Wellington, New Zealand<br>
-<em>Thesis: Effects of biogenic habitat structure loss on coral reef fish and fisheries</em></p>
-<p><strong>BSc in Marine Science &amp; Applied Mathematics (Dual Degree)</strong><br>
-Coastal Carolina University, USA</p>
+<p><strong><i class="fas fa-graduation-cap"></i> Ph.D.&nbsp;in Marine Biology</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">July 2024</span> <a href="https://www.wgtn.ac.nz">Te Herenga Waka – Victoria University of Wellington</a></p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p><em>Modelling Coral Reef Futures: Exploring the role of structural complexity in sustaining ecosystem services</em> | <a href="https://doi.org/10.26686/wgtn.26421523">DOI</a></p>
+</div>
 <hr>
 </section>
-<section id="current-positions" class="level2">
-<h2 class="anchored" data-anchor-id="current-positions">Current Positions</h2>
-<p><strong>Postdoctoral Scholar</strong><br>
-Oregon State University<br>
-<em>NOAA Alaska Climate Integrated Modeling (ACLIM &amp; GOACLIM) projects</em></p>
-<p><strong>Research Assistant</strong><br>
-Victoria University of Wellington<br>
-<em>Marsden-funded mesophotic ecosystems project</em></p>
+<section id="technical-skills" class="level2">
+<h2 class="anchored" data-anchor-id="technical-skills">Technical Skills</h2>
+<div style="text-align: center; margin-bottom: 1.5em; font-size: 0.85em;">
+<p><span class="skill-badge skill-expert" style="font-size: 0.7em; padding: 0.2em 0.6em;">Expert</span> <span class="skill-badge skill-intermediate" style="font-size: 0.7em; padding: 0.2em 0.6em;">Intermediate</span> <span class="skill-badge skill-basic" style="font-size: 0.7em; padding: 0.2em 0.6em;">Basic</span></p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 0.8em 0.8em; row-gap: 1.8em; justify-content: center; margin: 2em 0; line-height: 2.5;">
+<p><span class="skill-badge skill-expert">R</span> <span class="skill-badge skill-expert">Data Analysis</span> <span class="skill-badge skill-expert">Statistical Analysis</span> <span class="skill-badge skill-expert">Data Visualization</span> <span class="skill-badge skill-expert">Ecosystem Modeling</span> <span class="skill-badge skill-expert">Technical Writing</span> <span class="skill-badge skill-expert">Project Management</span> <br> <span class="skill-badge skill-intermediate">LaTeX</span> <span class="skill-badge skill-intermediate">MATLAB</span> <span class="skill-badge skill-intermediate">Microsoft Office</span> <span class="skill-badge skill-intermediate">R Package Development</span> <span class="skill-badge skill-intermediate">Policy Analysis</span> <span class="skill-badge skill-intermediate">Science Communication</span> <br> <span class="skill-badge skill-basic">Python</span> <span class="skill-badge skill-basic">Quality Control</span> <span class="skill-badge skill-basic">Stakeholder Engagement</span> <span class="skill-badge skill-basic">PADI Rescue Diver</span> <span class="skill-badge skill-basic">First Aid &amp; Oxygen Admin</span></p>
+</div>
 <hr>
 </section>
-<section id="skills" class="level2">
-<h2 class="anchored" data-anchor-id="skills">Skills</h2>
-<ul>
-<li>Ecosystem modeling</li>
-<li>Statistical analysis and R programming</li>
-<li>Data visualization</li>
-<li>MizerReef R package development</li>
-<li>Field research and data collection</li>
-<li>Science communication</li>
-</ul>
+<section id="teaching-mentoring" class="level2">
+<h2 class="anchored" data-anchor-id="teaching-mentoring">Teaching &amp; Mentoring</h2>
+<p><strong><i class="fas fa-chalkboard-user"></i> University Instructor</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">2019</span><br> <a href="https://www.wgtn.ac.nz">Victoria University of Wellington</a> | Wellington, NZ</p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p>Taught across 17 trimesters in statistics, biology, and ecology courses. Responsibilities included developing and delivering course materials, mentoring students across diverse backgrounds, supervising laboratory and field activities, and marking assessments. Developed expertise in making quantitative concepts accessible to diverse student cohorts.</p>
+</div>
 <hr>
 </section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<p>See the <a href="publications.html">Publications</a> page for a complete list.</p>
+<section id="leadership-advocacy" class="level2">
+<h2 class="anchored" data-anchor-id="leadership-advocacy">Leadership &amp; Advocacy</h2>
+<p><strong><i class="fas fa-people-group"></i> Founding Member</strong> <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">2021 – 2024</span><br> <a href="https://www.wgtn.ac.nz/science">Te Pitau Mātauranga (TPM) Postgraduate Student Advocacy Group</a> | Victoria University of Wellington</p>
+<div style="margin-left: 2em; font-size: 0.95em;">
+<p>Led initiatives assessing and improving postgraduate student wellbeing across a diverse cohort. Designed and analysed surveys to identify systemic issues and collaborated with university leadership to implement targeted improvements. Coordinated onboarding, peer support, and inclusive community-building events.</p>
+</div>
+<hr>
+<p>For a complete list of publications and conference presentations, see the <a href="publications.html">Publications</a> page.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

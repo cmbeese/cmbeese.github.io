@@ -1,0 +1,126 @@
+===============================================
+HOW TO CHANGE FISH BUTTON SHAPES
+===============================================
+
+OVERVIEW:
+The homepage fish buttons use SVG masks to create their shapes.
+Currently two fish shapes are used:
+  - fish-button-1.svg (default, used by most buttons)
+  - fish-button-2.svg (smaller, used by CV and Gallery)
+
+BUTTON ORDER ON HOMEPAGE:
+1. About Me
+2. CV/Resume
+3. Publications
+4. Current Projects
+5. MizerReef
+6. Gallery
+
+
+TO CHANGE A BUTTON'S FISH SHAPE:
+===============================================
+
+STEP 1: Open the CSS file
+   File: styles-palette.css
+   Location: root of your website folder
+
+STEP 2: Find the button you want to change
+   Search for: "nth-child(#)" where # is the button number (1-6)
+   
+   Current assignments:
+   - Button 1 (About Me): uses fish-button-1.svg
+   - Button 2 (CV): uses fish-button-2.svg ← CUSTOM SHAPE
+   - Button 3 (Publications): uses fish-button-1.svg
+   - Button 4 (Current Projects): uses fish-button-1.svg
+   - Button 5 (MizerReef): uses fish-button-1.svg
+   - Button 6 (Gallery): uses fish-button-2.svg ← CUSTOM SHAPE
+
+STEP 3: Locate the mask-image rules
+   Look for these lines in the button's section:
+   
+   -webkit-mask-image: url('../images/buttons/fish-button-X.svg');
+   mask-image: url('../images/buttons/fish-button-X.svg');
+
+STEP 4: Change the fish shape
+   Replace "fish-button-X.svg" with your desired fish SVG filename
+   
+   Example - to make Publications use fish-button-2:
+   Find this section:
+   
+   body:has(#home-page) .fish-swim:nth-child(3) .btn-primary {
+     background-color: #78BAAE;
+   }
+   
+   Add these lines after it:
+   
+   body:has(#home-page) .fish-swim:nth-child(3) .btn-primary {
+     -webkit-mask-image: url('../images/buttons/fish-button-2.svg');
+     mask-image: url('../images/buttons/fish-button-2.svg');
+   }
+
+
+ADDING A NEW FISH SHAPE:
+===============================================
+
+1. Create or obtain a new fish SVG file
+2. Save it in: images/buttons/
+   Example: fish-button-3.svg
+3. Follow STEP 2-4 above, but use your new filename
+
+
+ADJUSTING BUTTON SIZE FOR DIFFERENT FISH:
+===============================================
+
+If your new fish shape looks too big/small, adjust these properties:
+
+  -webkit-mask-size: 80% 80%;    ← Change percentages
+  mask-size: 80% 80%;             ← Match above
+  min-height: 105px;              ← Adjust height
+  padding: 2.3rem 4.6rem;         ← Adjust padding
+
+Current size settings:
+- Default fish (1, 3, 4, 5): 100% mask-size, 180px height, 4.5/9rem padding
+- Small fish (2, 6): 80% mask-size, 105px height, 2.3/4.6rem padding
+
+
+TIPS:
+===============================================
+
+- Always edit BOTH -webkit-mask-image AND mask-image lines (browser compatibility)
+- Save your changes and refresh the browser to see updates
+- If Quarto preview is running, it should auto-reload
+- Keep SVG files in images/buttons/ folder
+- Make sure SVG files are solid shapes (the mask only shows the shape silhouette)
+
+
+CURRENT FISH ASSIGNMENTS (for reference):
+===============================================
+
+Button 1 - About Me:
+  body:has(#home-page) .fish-swim:nth-child(1) .btn-primary
+  Shape: fish-button-1.svg (DEFAULT - inherited from base style)
+  
+Button 2 - CV/Resume:
+  body:has(#home-page) .fish-swim:nth-child(2) .btn-primary
+  Shape: fish-button-2.svg (line ~403-404)
+  
+Button 3 - Publications:
+  body:has(#home-page) .fish-swim:nth-child(3) .btn-primary
+  Shape: fish-button-1.svg (DEFAULT - inherited from base style)
+  
+Button 4 - Current Projects:
+  body:has(#home-page) .fish-swim:nth-child(4) .btn-primary
+  Shape: fish-button-1.svg (DEFAULT - inherited from base style)
+  
+Button 5 - MizerReef:
+  body:has(#home-page) .fish-swim:nth-child(5) .btn-primary
+  Shape: fish-button-1.svg (DEFAULT - inherited from base style)
+  
+Button 6 - Gallery:
+  body:has(#home-page) .fish-swim:nth-child(6) .btn-primary
+  Shape: fish-button-2.svg (line ~445-446)
+
+
+===============================================
+Need help? Check lines 320-450 in styles-palette.css
+===============================================

@@ -3,44 +3,44 @@ project:
   output-dir: docs
 
 website:
-  title: "Chelsey M. Beese"
   navbar:
-    left:
+    logo: images/resumeLetterIndigo.png
+    right:
       - text: Home
         file: index.qmd
       - text: About
         file: about.qmd
-      - text: CV
+      - text: Experience
         file: cv.qmd
       - text: Publications
         file: publications.qmd
-      - text: Projects
+      - text: Current Projects
         file: projects.qmd
       - text: Gallery
         file: gallery.qmd
       - text: MizerReef
         file: mizerreef.qmd
-      - text: Palettes
-        file: palettes.qmd
+      - text: Contact
+        file: contact.qmd
+  page-navigation: true
 
 format:
   html:
-    theme:
-      light: flatly
-      dark: superhero
-    css: style.css
+    theme: flatly
+    css: 
+      - style.css
+      - styles-palette.css
     toc: true
     smooth-scroll: true
+    filters:
+      - bold-author.lua
 
 # Ensure static assets are copied to output
 resources:
-  - assets
   - images
-  - background
   - plots
   - scripts
   - my-pubs.bib
-  - mizer-reef-draft-6.svg
 
 # Execution options for R code blocks if needed
 execute:

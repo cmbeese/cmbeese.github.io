@@ -1,13 +1,19 @@
 ---
 title: About
+toc: false
+body-classes: about-page
 ---
 
-# Chelsey M. Beese, Ph.D.
+::: {.column-screen style="padding: 0; margin-top: 0"}
+![](images/whale-banner-3.jpg){.banner fig-align="center"}
+:::
 
-**Chelsey** is a marine scientist specializing in interdisciplinary research and ecosystem modeling. She is currently a postdoctoral scholar with the [Integrated Marine Fisheries Lab](https://cheryl-barnes.github.io/integrated-marine-fisheries.html) at [Oregon State University](https://marinesciences.oregonstate.edu/), working with Dr. Cheryl Barnes (OSU) and Dr. Jon Reum (NOAA) to advance NOAA's Alaska ([ACLIM](https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project)) and Gulf of Alaska ([GOACLIM](https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project)) Climate Integrated Modeling projects.
+**Chelsey** is a marine scientist specializing in interdisciplinary research and ecosystem modeling. She is a postdoctoral scholar with the [Integrated Marine Fisheries Lab](https://cheryl-barnes.github.io/integrated-marine-fisheries.html) at [Oregon State University](https://marinesciences.oregonstate.edu/), working with [Dr. Cheryl Barnes](https://marineresearch.oregonstate.edu/users/cheryl-barnes) (OSU) and Dr. Jon Reum (NOAA) to advance [NOAA](https://www.fisheries.noaa.gov/)'s Alaska ([ACLIM](https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project)) and Gulf of Alaska ([GOACLIM](https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project)) Climate Integrated Modeling projects. Her work integrates ecological modeling and climate science to understand how changing oceans shape North Pacific ecosystems and fisheries.
 
-## Contact
+She also works part time with the [Marine Ecology and Ecosystem Modelling Lab](https://www.researchgate.net/lab/Marine-Ecology-and-Ecosystem-Modelling-Lab-Alice-Rogers) under Dr. Alice Rogers at [Victoria University of Wellington](https://www.wgtn.ac.nz) on the project **"Uncovering the functioning and importance of temperate mesophotic ecosystems"** funded by the [Marsden Fund](https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/), combining ecosystem models with field data to illuminate these understudied habitats.
 
-**Email:** [beese.c.m@gmail.com](mailto:beese.c.m@gmail.com) | [chelsey.beese@oregonstate.edu](mailto:chelsey.beese@oregonstate.edu)
+Chelsey completed her Ph.D. in Marine Biology at [Te Herenga Waka – Victoria University of Wellington](https://www.wgtn.ac.nz), supervised by [Dr. Alice Rogers](https://people.wgtn.ac.nz/alice.rogers) and [Prof. Peter Mumby](https://about.uq.edu.au/experts/2387), who directs the [Marine Spatial Ecology Lab](https://www.marinespatialecologylab.org/) at the [University of Queensland](https://environment.uq.edu.au/study/study-areas/marine-biology-ocean-science). Her doctoral work examined how loss of biogenic habitat structure affects coral reef fish and fisheries, blending field surveys with statistical and ecosystem modeling to link habitat complexity to predator fitness, productivity, and fisheries outcomes.
 
-**Connect:** [GitHub](https://github.com/cmbeese) | [LinkedIn](https://www.linkedin.com/in/chelseybeese/) | [ResearchGate](https://www.researchgate.net/profile/Chelsey-Beese-2) | [ORCID](https://orcid.org/0000-0003-0949-7888)
+With dual BSc degrees in Marine Science and Applied Mathematics from [Coastal Carolina University](https://www.coastal.edu/marine), Chelsey is an experienced data analyst and programmer in R. She develops and maintains the [MizerReef R package](https://github.com/cmbeese/MizerReef) and has 10+ years of teaching in mathematics, statistics, and biology. She also has 4+ years of experience in marine and estuarine fieldwork, including service as a [commercial fisheries observer](https://www.fisheries.noaa.gov/alaska/fisheries-observers/north-pacific-observer-program) for NOAA's North Pacific Groundfish Observer Program in the Bering Sea and Gulf of Alaska.
+
+Chelsey is passionate about science communication, community outreach, social justice, and strengthening relationships with Indigenous knowledge, people, and systems. Outside of research, she enjoys diving, travel, and a good book.

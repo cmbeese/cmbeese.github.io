@@ -1,43 +1,132 @@
 ---
-title: CV
+title: Experience
+toc: false
 ---
 
-# Curriculum Vitae
+::: {.column-screen style="padding: 0; margin-top: 0"}
+![](images/alaska-banner.png){.banner fig-align="center"}
+:::
+
+## Professional Experience
+
+**<i class="fas fa-flask-vial"></i> Postdoctoral Scholar** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Current</span></br>
+[Oregon State University](https://marinesciences.oregonstate.edu/) | Corvallis, OR, USA
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Working with [Dr. Cheryl Barnes](https://marineresearch.oregonstate.edu/users/cheryl-barnes) and Dr. Jon Reum ([NOAA](https://www.fisheries.noaa.gov/)) on [ACLIM](https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project) and [GOACLIM](https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project) projects. Responsibilities include ecosystem modeling and climate science integration to understand how changing oceans shape North Pacific ecosystems and fisheries.
+:::
+
+---
+
+**<i class="fas fa-flask-vial"></i> Research Assistant** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">May 2025 – Current</span></br>
+[Victoria University of Wellington](https://www.wgtn.ac.nz) | Wellington, NZ
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Adapting and extending ecosystem models on a [Marsden-funded project](https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/) investigating temperate mesophotic sponge reefs. Focus on incorporating detrital dynamics to improve understanding of trophic pathways and support conservation planning.
+:::
+
+---
+
+**<i class="fas fa-chart-line"></i> Data Analyst** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Aug 2024 – Jul 2025</span></br>
+[Department of Conservation](https://www.doc.govt.nz/) | Wellington, NZ
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Supported marine reserve monitoring efforts. Analyzed baited underwater video (BUV) footage, managed data entry, prepared reports, and conducted preliminary statistical analyses.
+:::
+
+---
+
+**<i class="fas fa-flask-vial"></i> PhD Researcher & Teaching Assistant** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Dec 2018 – Sep 2024</span></br>
+[Victoria University of Wellington](https://www.wgtn.ac.nz) | Wellington, NZ
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Led PhD project on coral reef ecosystem modelling. Concurrently taught 17 trimesters in statistics, biology, and ecology courses. Responsibilities included project management, data analysis, scientific writing, course development, student mentoring, and lab/fieldwork supervision.
+:::
+
+---
+
+**<i class="fas fa-fish"></i> North Pacific Fisheries Observer** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Apr 2015 – Oct 2018</span></br>
+[NOAA Fisheries](https://www.fisheries.noaa.gov/) / Alaskan Observers, Inc. | Seattle, WA, USA
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Completed 12 deployments totalling 405 sea days aboard commercial fishing vessels in the Bering Sea and Gulf of Alaska. Designed sampling protocols, collected catch and biological data, monitored regulatory compliance, and liaised among regulators, fishing crews, captains, and Coast Guard.
+:::
+
+<!-- ---
+
+**<i class="fas fa-fish"></i> Husbandry Intern** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">Jun 2014 – Aug 2014</span>
+[Flying Sharks](https://flyingsharks.eu/) | Peniche & Faial, Portugal
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Supported live transport operations and aquarium care at Aquário de Porto Pim. Participated in collection dives, performed husbandry tasks, and assisted with animal health checks and life support systems.
+:::
+
+--- -->
 
 ## Education
 
-**Ph.D. in Marine Biology**  
-Victoria University of Wellington, New Zealand  
-*Thesis: Effects of biogenic habitat structure loss on coral reef fish and fisheries*
+**<i class="fas fa-graduation-cap"></i> Ph.D. in Marine Biology** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">July 2024</span>
+[Te Herenga Waka – Victoria University of Wellington](https://www.wgtn.ac.nz)
 
-**BSc in Marine Science & Applied Mathematics (Dual Degree)**  
-Coastal Carolina University, USA
-
----
-
-## Current Positions
-
-**Postdoctoral Scholar**  
-Oregon State University  
-*NOAA Alaska Climate Integrated Modeling (ACLIM & GOACLIM) projects*
-
-**Research Assistant**  
-Victoria University of Wellington  
-*Marsden-funded mesophotic ecosystems project*
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+*Modelling Coral Reef Futures: Exploring the role of structural complexity in sustaining ecosystem services* | [DOI](https://doi.org/10.26686/wgtn.26421523)
+:::
 
 ---
 
-## Skills
+## Technical Skills
 
-- Ecosystem modeling
-- Statistical analysis and R programming
-- Data visualization
-- MizerReef R package development
-- Field research and data collection
-- Science communication
+::: {style="text-align: center; margin-bottom: 1.5em; font-size: 0.85em;"}
+<span class="skill-badge skill-expert" style="font-size: 0.7em; padding: 0.2em 0.6em;">Expert</span>
+<span class="skill-badge skill-intermediate" style="font-size: 0.7em; padding: 0.2em 0.6em;">Intermediate</span>
+<span class="skill-badge skill-basic" style="font-size: 0.7em; padding: 0.2em 0.6em;">Basic</span>
+:::
+
+::: {style="display: flex; flex-wrap: wrap; gap: 0.8em 0.8em; row-gap: 1.8em; justify-content: center; margin: 2em 0; line-height: 2.5;"}
+<span class="skill-badge skill-expert">R</span>
+<span class="skill-badge skill-expert">Data Analysis</span>
+<span class="skill-badge skill-expert">Statistical Analysis</span>
+<span class="skill-badge skill-expert">Data Visualization</span>
+<span class="skill-badge skill-expert">Ecosystem Modeling</span>
+<span class="skill-badge skill-expert">Technical Writing</span>
+<span class="skill-badge skill-expert">Project Management</span>
+</br>
+<span class="skill-badge skill-intermediate">LaTeX</span>
+<span class="skill-badge skill-intermediate">MATLAB</span>
+<span class="skill-badge skill-intermediate">Microsoft Office</span>
+<span class="skill-badge skill-intermediate">R Package Development</span>
+<span class="skill-badge skill-intermediate">Policy Analysis</span>
+<span class="skill-badge skill-intermediate">Science Communication</span>
+</br>
+<span class="skill-badge skill-basic">Python</span>
+<span class="skill-badge skill-basic">Quality Control</span>
+<span class="skill-badge skill-basic">Stakeholder Engagement</span> </br>
+<span class="skill-badge skill-basic">PADI Rescue Diver</span>
+<span class="skill-badge skill-basic">First Aid & Oxygen Admin</span>
+:::
 
 ---
 
-## Publications
+## Teaching & Mentoring
 
-See the [Publications](publications.html) page for a complete list.
+**<i class="fas fa-chalkboard-user"></i> University Instructor** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">2019</span></br>
+[Victoria University of Wellington](https://www.wgtn.ac.nz) | Wellington, NZ
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Taught across 17 trimesters in statistics, biology, and ecology courses. Responsibilities included developing and delivering course materials, mentoring students across diverse backgrounds, supervising laboratory and field activities, and marking assessments. Developed expertise in making quantitative concepts accessible to diverse student cohorts.
+:::
+
+---
+
+## Leadership & Advocacy
+
+**<i class="fas fa-people-group"></i> Founding Member** <span style="float: right; font-size: 0.85em; color: #355070; font-weight: 600;">2021 – 2024</span></br>
+[Te Pitau Mātauranga (TPM) Postgraduate Student Advocacy Group](https://www.wgtn.ac.nz/science) | Victoria University of Wellington
+
+::: {style="margin-left: 2em; font-size: 0.95em;"}
+Led initiatives assessing and improving postgraduate student wellbeing across a diverse cohort. Designed and analysed surveys to identify systemic issues and collaborated with university leadership to implement targeted improvements. Coordinated onboarding, peer support, and inclusive community-building events.
+:::
+
+---
+
+For a complete list of publications and conference presentations, see the [Publications](publications.html) page.

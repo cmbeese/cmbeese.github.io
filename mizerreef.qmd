@@ -1,6 +1,9 @@
 ---
 title: MizerReef
+toc: true
 ---
+
+![](images/mizerReef-logo.png){fig-align="center" width="400"}
 
 # MizerReef
 

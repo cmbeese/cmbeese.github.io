@@ -1,17 +1,48 @@
 ---
 title: Home
 page-layout: article
+toc: false
 ---
 
-# Welcome to Chelsey M. Beese's Website!
+::: {#home-page}
 
-I'm Chelsey, a marine scientist, ecosystem modeler, and science communicator. Dive in to learn about my research, teaching, and adventures in marine science!
+::: {style="display: flex; align-items: flex-start; gap: 2rem; margin: 2.5rem 0 1rem 0;"}
+![](images/circle_headshot.png){style="width: 150px; height: 150px; min-width: 150px; border-radius: 50%; border: 3px solid #FDB36A;"}
 
-<div style="margin: 2rem 0; display:flex; flex-wrap:wrap; gap:0.75rem;">
-  <a href="about.html" class="btn btn-primary">About Me</a>
-  <a href="cv.html" class="btn btn-primary">CV</a>
-  <a href="publications.html" class="btn btn-primary">Publications</a>
-  <a href="projects.html" class="btn btn-primary">Projects</a>
-  <a href="gallery.html" class="btn btn-primary">Gallery</a>
-  <a href="mizerreef.html" class="btn btn-primary">MizerReef</a>
-</div>
+::: {style="flex: 1;"}
+<h1 style="color: #FFEDBF !important; margin-bottom: 0.5rem; font-family: 'Baloo 2', cursive; font-weight: 700;">Chelsey M. Beese, Ph.D.</h1>
+
+<p style="font-size: 0.9rem; color: #FDB36A; margin-bottom: 1rem; font-family: 'Nunito', sans-serif; font-weight: 600;"><strong>Marine Scientist | Ecosystem Modeler | Science Communicator</strong></p>
+
+:::
+:::
+
+::: {style="margin: 1rem auto; max-width: 1300px; position: relative; min-height: 340px;"}
+::: {.fish-swim style="position: absolute; left: -6%; top: 0; width: 360px;"}
+[<span>About Me</span>](about.qmd){.btn .btn-primary}
+:::
+
+::: {.fish-swim style="position: absolute; left: 30%; top: 10px; width: 240px;"}
+[<span>Experience</span>](cv.qmd){.btn .btn-primary}
+:::
+
+::: {.fish-swim style="position: absolute; right: -5%; top: 40px; width: 360px;"}
+[<span>Publications</span>](publications.qmd){.btn .btn-primary}
+:::
+
+::: {.fish-swim style="position: absolute; left: 0%; top: 110px; width: 360px;"}
+[<span>Current<br>Projects</span>](projects.qmd){.btn .btn-primary}
+:::
+
+::: {.fish-swim style="position: absolute; right: -3%; top: 190px; width: 360px;"}
+[<span>MizerReef</span>](mizerreef.qmd){.btn .btn-primary}
+:::
+
+::: {.fish-swim style="position: absolute; left: 38%; top: 100px; width: 240px;"}
+[<span>Gallery</span>](gallery.qmd){.btn .btn-primary}
+:::
+:::
+
+![](images/bottom-image.png)
+
+:::

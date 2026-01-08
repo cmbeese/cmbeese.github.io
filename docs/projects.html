@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Chelsey M. Beese</title>
+<title>Current Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -37,14 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fc7cc9eb68d4cc25b4f77f3bdca4ebaa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,171 +72,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles-palette.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -248,9 +83,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Chelsey M. Beese</span>
+    <img src="./images/resumeLetterIndigo.png" alt="" class="navbar-logo light-content">
+    <img src="./images/resumeLetterIndigo.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -258,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
@@ -269,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cv.html"> 
-<span class="menu-text">CV</span></a>
+<span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
@@ -277,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./projects.html" aria-current="page"> 
-<span class="menu-text">Projects</span></a>
+<span class="menu-text">Current Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./gallery.html"> 
@@ -288,13 +122,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">MizerReef</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./palettes.html"> 
-<span class="menu-text">Palettes</span></a>
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -308,25 +141,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-projects" id="toc-research-projects" class="nav-link active" data-scroll-target="#research-projects">Research Projects</a>
-  <ul class="collapse">
-  <li><a href="#current-projects" id="toc-current-projects" class="nav-link" data-scroll-target="#current-projects">Current Projects</a>
-  <ul class="collapse">
-  <li><a href="#noaa-aclim-goaclim" id="toc-noaa-aclim-goaclim" class="nav-link" data-scroll-target="#noaa-aclim-goaclim">NOAA ACLIM &amp; GOACLIM</a></li>
-  <li><a href="#mesophotic-ecosystems-research" id="toc-mesophotic-ecosystems-research" class="nav-link" data-scroll-target="#mesophotic-ecosystems-research">Mesophotic Ecosystems Research</a></li>
-  <li><a href="#mizerreef-development" id="toc-mizerreef-development" class="nav-link" data-scroll-target="#mizerreef-development">MizerReef Development</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#noaa-climate-integrated-modeling" id="toc-noaa-climate-integrated-modeling" class="nav-link active" data-scroll-target="#noaa-climate-integrated-modeling">NOAA Climate Integrated Modeling</a></li>
+  <li><a href="#temperate-mesophotic-ecosystems" id="toc-temperate-mesophotic-ecosystems" class="nav-link" data-scroll-target="#temperate-mesophotic-ecosystems">Temperate Mesophotic Ecosystems</a></li>
+  <li><a href="#mizerreef-r-package" id="toc-mizerreef-r-package" class="nav-link" data-scroll-target="#mizerreef-r-package">MizerReef R Package</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Current Projects</h1>
 </div>
 
 
@@ -343,45 +169,47 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="research-projects" class="level1">
-<h1>Research Projects</h1>
-<section id="current-projects" class="level2">
-<h2 class="anchored" data-anchor-id="current-projects">Current Projects</h2>
-<section id="noaa-aclim-goaclim" class="level3">
-<h3 class="anchored" data-anchor-id="noaa-aclim-goaclim">NOAA ACLIM &amp; GOACLIM</h3>
-<p>Climate Integrated Modeling projects for Alaska and Gulf of Alaska marine ecosystems</p>
+<section id="noaa-climate-integrated-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="noaa-climate-integrated-modeling">NOAA Climate Integrated Modeling</h2>
+<div style="border-left: 4px solid #b56576; padding-left: 1.5rem; margin-bottom: 2rem;">
+<p><strong>Alaska Climate Integrated Modeling (ACLIM) &amp; Gulf of Alaska CLIM</strong></p>
+<p>Working as a postdoctoral scholar with the <a href="https://cheryl-barnes.github.io/integrated-marine-fisheries.html">Integrated Marine Fisheries Lab</a> at <a href="https://marinesciences.oregonstate.edu/">Oregon State University</a> to advance <a href="https://www.fisheries.noaa.gov/">NOAA’s</a> climate-integrated ecosystem modeling initiatives for North Pacific fisheries. These projects integrate climate projections with ecosystem models to understand how changing ocean conditions—including temperature, acidification, and productivity shifts—affect fish populations, community structure, and fisheries management strategies in the <a href="https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project">Bering Sea</a> and <a href="https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project">Gulf of Alaska</a>.</p>
+<p>The work combines statistical modeling, time-series analysis, and dynamic ecosystem simulations to provide science-based advice for sustainable fisheries management under climate change. This research directly supports the <a href="https://www.npfmc.org/">North Pacific Fishery Management Council</a> in developing climate-informed management approaches.</p>
+<p><strong>Collaborators:</strong> <a href="https://marineresearch.oregonstate.edu/users/cheryl-barnes">Dr.&nbsp;Cheryl Barnes</a> (OSU), Dr.&nbsp;Jon Reum (NOAA Alaska Fisheries Science Center)<br>
+<strong>Funding:</strong> <a href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a><br>
+<strong>Learn more:</strong> <a href="https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project">ACLIM Project</a> | <a href="https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project">GOACLIM Project</a></p>
+</div>
 </section>
-<section id="mesophotic-ecosystems-research" class="level3">
-<h3 class="anchored" data-anchor-id="mesophotic-ecosystems-research">Mesophotic Ecosystems Research</h3>
-<p>Marsden-funded project investigating temperate mesophotic ecosystems using ecosystem modeling</p>
+<section id="temperate-mesophotic-ecosystems" class="level2">
+<h2 class="anchored" data-anchor-id="temperate-mesophotic-ecosystems">Temperate Mesophotic Ecosystems</h2>
+<div style="border-left: 4px solid #b56576; padding-left: 1.5rem; margin-bottom: 2rem;">
+<p><strong>Uncovering the functioning and importance of temperate mesophotic ecosystems</strong></p>
+<p>Part-time collaboration with the <a href="https://www.researchgate.net/lab/Marine-Ecology-and-Ecosystem-Modelling-Lab-Alice-Rogers">Marine Ecology and Ecosystem Modelling Lab</a> at <a href="https://www.wgtn.ac.nz">Victoria University of Wellington</a> on a <a href="https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/">Marsden Fund</a>-supported project investigating temperate mesophotic reefs (30-150m depth). These twilight-zone ecosystems remain poorly understood despite potentially serving as critical refugia for marine biodiversity and contributing to fisheries productivity.</p>
+<p>The project combines ROV surveys, fish community data, and ecosystem modeling to quantify how mesophotic habitats support fish populations and connect to shallower reef systems. By integrating empirical field data with size-structured models, we’re exploring how depth gradients, light availability, and habitat complexity shape community dynamics and ecosystem services in New Zealand’s temperate waters.</p>
+<p><strong>PI:</strong> <a href="https://people.wgtn.ac.nz/alice.rogers">Dr.&nbsp;Alice Rogers</a> (Victoria University of Wellington)<br>
+<strong>Funding:</strong> <a href="https://www.royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/">Royal Society Te Apārangi Marsden Fund</a><br>
+<strong>Duration:</strong> 2023-2026</p>
+</div>
 </section>
-<section id="mizerreef-development" class="level3">
-<h3 class="anchored" data-anchor-id="mizerreef-development">MizerReef Development</h3>
-<p>R package development for coral reef ecosystem modeling</p>
-<hr>
-<p><em>Create individual project pages later for detailed information.</em></p>
+<section id="mizerreef-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="mizerreef-r-package">MizerReef R Package</h2>
+<div style="border-left: 4px solid #b56576; padding-left: 1.5rem; margin-bottom: 2rem;">
+<p><strong>Open-source ecosystem modeling tool for coral reef fisheries</strong></p>
+<p>Developing and maintaining <a href="https://github.com/cmbeese/MizerReef">MizerReef</a>, an open-source R package that extends the <a href="https://sizespectrum.org/mizer/">mizer framework</a> for size-structured multispecies modeling to coral reef ecosystems. The package enables researchers and managers to explore complex relationships between habitat structure, predator-prey dynamics, fish community composition, and fisheries outcomes.</p>
+<p>MizerReef incorporates coral reef-specific processes including: - Habitat complexity effects on predator-prey interactions - Benthic-pelagic coupling - Spatial heterogeneity in reef structure - Fisheries selectivity patterns for reef species - Climate impacts on habitat and productivity</p>
+<p>The tool supports scenario testing for fisheries management, habitat restoration, and climate adaptation strategies. It’s designed to be accessible for both research and applied management contexts, with extensive documentation and example applications.</p>
+<p><strong>Status:</strong> Active development and maintenance<br>
+<strong>Repository:</strong> <a href="https://github.com/cmbeese/MizerReef">github.com/cmbeese/MizerReef</a><br>
+<strong>Base Framework:</strong> <a href="https://sizespectrum.org/mizer/">Mizer (Blanchard et al.&nbsp;2014)</a><br>
+<strong>Applications:</strong> PhD dissertation research, fisheries management scenario testing, coral reef conservation planning</p>
+</div>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {

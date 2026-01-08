@@ -1,30 +1,42 @@
-# Personal Website — Jekyll + Hydejack
+# Personal Website — Quarto
 
-This site uses the Hydejack theme via Jekyll's `remote_theme`, configured to be compatible with GitHub Pages.
+This is a personal academic website built with Quarto, deployed via GitHub Pages.
+
+## Project Structure
+
+- `*.qmd` files: Quarto markdown source files for each page
+- `_quarto.yml`: Main configuration file
+- `style.css` & `styles-palette.css`: Custom styling
+- `images/`: Image assets and icons
+- `_data/`: Data files (publications, palettes)
+- `docs/`: Generated output directory (published to GitHub Pages)
+
+## Local Development
+
+1. Install Quarto: <https://quarto.org/docs/get-started/>
+2. Preview the site locally:
+
+```powershell
+quarto preview
+```
+
+3. Render the site:
+
+```powershell
+quarto render
+```
 
 ## Deployment (GitHub Pages)
-- Push changes to the `main` branch. GitHub Pages will build and publish automatically.
-- Ensure `_config.yml` contains `remote_theme: hydecorp/hydejack@v9` and does NOT set `theme:`.
-- `Gemfile` should use `github-pages` (no `jekyll-theme-hydejack`).
 
-## Local Development (Windows)
-1. Install Ruby and Bundler.
-2. Install dependencies:
+- Push changes to the `main` branch
+- GitHub Actions will automatically render and deploy the site
+- The site is published from the `docs/` directory
 
-```powershell
-bundle install
-```
+## Customization
 
-3. Run the site locally:
+- Edit `.qmd` files to update page content
+- Modify `_quarto.yml` to change site structure or theme
+- Update `style.css` and `styles-palette.css` for custom styling
+- See `HOW-TO-CHANGE-FISH-SHAPES.txt` for fish button customization
 
-```powershell
-bundle exec jekyll serve
-```
-
-- Open http://localhost:4000 to view the site.
-
-## Troubleshooting
-- Build error: "The jekyll-theme-hydejack theme could not be found" → remove `theme:` from `_config.yml`, keep `remote_theme`, and use `github-pages` in `Gemfile`.
-- If `jekyll serve` fails on Ruby ≥ 3.0, ensure `webrick` is installed (already included in `Gemfile`).
-
-For more details, see Jekyll and Hydejack documentation.
+For more details, see [Quarto documentation](https://quarto.org/docs/guide/).

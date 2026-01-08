@@ -1,0 +1,38 @@
+---
+title: Contact
+page-layout: article
+body-classes: contact-page
+toc: false
+---
+
+::: {.column-screen style="padding: 0; margin-top: 0"}
+![](images/whale-banner-3.jpg){.banner fig-align="center"}
+:::
+
+::: {=html}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+<style>
+	.contact-list { display: grid; gap: 0.4rem; }
+	.contact-item { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; }
+	.contact-item i { font-size: 1.1rem; }
+	.contact-note { font-size: 0.9rem; color: #FFEDBF; }
+</style>
+:::
+
+## Get in touch
+
+::: {.contact-list}
+- <span class="contact-item"><i class="ai ai-envelope"></i>OSU: [chelsey.beese@oregonstate.edu](mailto:chelsey.beese@oregonstate.edu)</span>
+- <span class="contact-item"><i class="ai ai-envelope"></i>VUW: [chelsey.beese@vuw.ac.nz](mailto:chelsey.beese@vuw.ac.nz)</span>
+- <span class="contact-item"><i class="ai ai-envelope"></i>Corresponding/author: [beese.c.m@gmail.com](mailto:beese.c.m@gmail.com)</span>
+- <span class="contact-item"><i class="ai ai-envelope"></i>Personal: [shellsea.beese@gmail.com](mailto:shellsea.beese@gmail.com)</span>
+:::
+
+### Connect
+
+- <span class="contact-item"><i class="ai ai-linkedin"></i>[LinkedIn](https://www.linkedin.com/in/chelseybeese/)</span>
+- <span class="contact-item"><i class="ai ai-orcid"></i>[ORCID](https://orcid.org/0000-0003-0949-7888)</span>
+- <span class="contact-item"><i class="ai ai-researchgate"></i>[ResearchGate](https://www.researchgate.net/profile/Chelsey-Beese-2)</span>
+- <span class="contact-item"><i class="ai ai-google-scholar"></i>[Google Scholar](https://scholar.google.com/citations?user=lnuj-DwAAAAJ&hl=en)</span>
+
+Feel free to email the author address for collaborations, manuscripts, or data/model requests; use OSU/VUW for institutional matters.

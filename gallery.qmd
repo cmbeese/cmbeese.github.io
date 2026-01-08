@@ -1,12 +1,52 @@
 ---
 title: Gallery
+toc: false
 ---
 
-# Gallery
+::: {.column-screen style="padding: 0; margin-top: 0"}
+![](images/whale-banner-3.jpg){.banner fig-align="center"}
+:::
 
-Place images in the `images/gallery/` folder. Example grid:
+# Field & Underwater Photography
 
-<div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 2rem 0;">
-  <!-- Add <img> tags pointing to your images/gallery/... files -->
-  <!-- Example: <img src="images/gallery/sample1.jpg" alt="Sample" style="width:100%; height:auto;"/> -->
-</div>
+## Maldives
+
+:::: {.gallery-grid style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0;"}
+
+[![Colorful coral reef in the Maldives](images/gallery/maldives_coral.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/maldives_coral.jpg)
+
+[![Sharks swimming in the Maldives](images/gallery/maldives_sharks.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/maldives_sharks.jpg)
+
+[![Nurse shark resting on sandy bottom](images/gallery/maldives-nurse-shark.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/maldives-nurse-shark.jpg)
+
+[![Shark gliding through blue water](images/gallery/maldives-shark-2.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/maldives-shark-2.jpg)
+
+[![Underwater scene in the Maldives](images/gallery/maldives-in-out.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/maldives-in-out.jpg)
+
+::::
+
+## New Zealand
+
+:::: {.gallery-grid style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0;"}
+
+[![Group of stingrays on sandy seafloor](images/gallery/pk-rays.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/pk-rays.jpg)
+
+[![Close-up of a stingray](images/gallery/pk-ray-2.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/pk-ray-2.jpg)
+
+[![Stingray swimming near the bottom](images/gallery/pk-ray-3.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/pk-ray-3.jpg)
+
+[![Stingray with distinctive markings](images/gallery/pk-ray-4.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/pk-ray-4.jpg)
+
+[![School of fish underwater](images/gallery/pk_fish.jpg){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/pk_fish.jpg)
+
+[![Kelp forest swaying in the current](images/gallery/pk_kelp.JPG){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/pk_kelp.JPG)
+
+::::
+
+## Alaska
+
+:::: {.gallery-grid style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0;"}
+
+[![Seals resting on rocks](images/gallery/seals.png){style="width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 4px solid #b56576;"}](images/gallery/seals.png)
+
+::::
