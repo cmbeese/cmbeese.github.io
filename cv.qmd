@@ -1,0 +1,43 @@
+---
+title: CV
+---
+
+# Curriculum Vitae
+
+## Education
+
+**Ph.D. in Marine Biology**  
+Victoria University of Wellington, New Zealand  
+*Thesis: Effects of biogenic habitat structure loss on coral reef fish and fisheries*
+
+**BSc in Marine Science & Applied Mathematics (Dual Degree)**  
+Coastal Carolina University, USA
+
+---
+
+## Current Positions
+
+**Postdoctoral Scholar**  
+Oregon State University  
+*NOAA Alaska Climate Integrated Modeling (ACLIM & GOACLIM) projects*
+
+**Research Assistant**  
+Victoria University of Wellington  
+*Marsden-funded mesophotic ecosystems project*
+
+---
+
+## Skills
+
+- Ecosystem modeling
+- Statistical analysis and R programming
+- Data visualization
+- MizerReef R package development
+- Field research and data collection
+- Science communication
+
+---
+
+## Publications
+
+See the [Publications](publications.html) page for a complete list.

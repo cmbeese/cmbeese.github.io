@@ -1,0 +1,12 @@
+---
+title: Gallery
+---
+
+# Gallery
+
+Place images in the `images/gallery/` folder. Example grid:
+
+<div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; margin: 2rem 0;">
+  <!-- Add <img> tags pointing to your images/gallery/... files -->
+  <!-- Example: <img src="images/gallery/sample1.jpg" alt="Sample" style="width:100%; height:auto;"/> -->
+</div>

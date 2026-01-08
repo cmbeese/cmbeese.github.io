@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Chelsey M. Beese"
+  navbar:
+    left:
+      - text: Home
+        file: index.qmd
+      - text: About
+        file: about.qmd
+      - text: CV
+        file: cv.qmd
+      - text: Publications
+        file: publications.qmd
+      - text: Projects
+        file: projects.qmd
+      - text: Gallery
+        file: gallery.qmd
+      - text: MizerReef
+        file: mizerreef.qmd
+      - text: Palettes
+        file: palettes.qmd
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: superhero
+    css: style.css
+    toc: true
+    smooth-scroll: true
+
+# Ensure static assets are copied to output
+resources:
+  - assets
+  - images
+  - background
+  - plots
+  - scripts
+  - my-pubs.bib
+  - mizer-reef-draft-6.svg
+
+# Execution options for R code blocks if needed
+execute:
+  freeze: auto
+  error: false

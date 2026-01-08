@@ -1,0 +1,17 @@
+---
+title: Home
+page-layout: article
+---
+
+# Welcome to Chelsey M. Beese's Website!
+
+I'm Chelsey, a marine scientist, ecosystem modeler, and science communicator. Dive in to learn about my research, teaching, and adventures in marine science!
+
+<div style="margin: 2rem 0; display:flex; flex-wrap:wrap; gap:0.75rem;">
+  <a href="about.html" class="btn btn-primary">About Me</a>
+  <a href="cv.html" class="btn btn-primary">CV</a>
+  <a href="publications.html" class="btn btn-primary">Publications</a>
+  <a href="projects.html" class="btn btn-primary">Projects</a>
+  <a href="gallery.html" class="btn btn-primary">Gallery</a>
+  <a href="mizerreef.html" class="btn btn-primary">MizerReef</a>
+</div>

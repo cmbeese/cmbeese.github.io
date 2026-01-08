@@ -1,0 +1,13 @@
+---
+title: Publications
+bibliography: my-pubs.bib
+nocite: |
+  @*
+---
+
+# Publications
+
+The full list below is generated from `my-pubs.bib`.
+
+## References
+
