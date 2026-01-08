@@ -25,10 +25,9 @@ jobs:
       - name: Render Quarto site
         run: quarto render
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
-          publish_branch: main
-          keep_files: true
+      - name: Commit and push rendered docs
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add docs/
+          git diff --cached --quiet || (git commit -m "Render site [skip ci]" && git push)
