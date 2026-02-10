@@ -120,8 +120,6 @@ main, header, footer, #about, #contact {
 }
 .fish-button.mizerreef-fish {
   background: var(--accent-3) !important;
-  display: flex;
-  align-items: center;
   justify-content: center;
   opacity: 1 !important;
   z-index: 2;
@@ -138,6 +136,11 @@ main, header, footer, #about, #contact {
   style.css for Chelsey M. Beese, Ph.D. | Personal Academic Website
   Retro, fun, and professional with 70s-inspired color palette and animated fish swoosh
 */
+  font-size: 1em; /* Reduced font size */
+  padding: 0.5em 1em; /* Adjusted padding */
+  white-space: normal; /* Allow text wrapping if needed */
+  overflow: hidden; /* Prevent overflow */
+  line-height: 1.2; /* Improve vertical fit */
 :root {
   --blue-main: #016FA0;
   --blue-alt: #00769E;
