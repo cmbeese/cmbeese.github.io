@@ -12,6 +12,8 @@ Working as a postdoctoral scholar with the [Integrated Marine Fisheries Lab](htt
 
 The work combines statistical modeling, time-series analysis, and dynamic ecosystem simulations to provide science-based advice for sustainable fisheries management under climate change. This research directly supports the [North Pacific Fishery Management Council](https://www.npfmc.org/) in developing climate-informed management approaches.
 
+Madison Bargas is in my lab.
+
 **Collaborators:** [Dr. Cheryl Barnes](https://marineresearch.oregonstate.edu/users/cheryl-barnes) (OSU), Dr. Jon Reum (NOAA Alaska Fisheries Science Center)  
 **Funding:** [NOAA Fisheries](https://www.fisheries.noaa.gov/)  
 **Learn more:** [ACLIM Project](https://www.fisheries.noaa.gov/alaska/ecosystems/alaska-climate-integrated-modeling-project) | [GOACLIM Project](https://www.fisheries.noaa.gov/alaska/ecosystems/gulf-alaska-climate-integrated-modeling-project)
