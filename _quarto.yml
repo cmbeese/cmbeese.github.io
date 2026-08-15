@@ -33,8 +33,6 @@ format:
     toc: true
     toc-expand: true
     smooth-scroll: true
-    filters:
-      - bold-author.lua
 
 # Ensure static assets are copied to output
 resources:

@@ -21,9 +21,45 @@ toc: false
 ::: {#refs}
 :::
 
+::: {=html}
+<script>
+// Bold Chelsey's own name wherever it appears in the bibliography -- as
+// lead author CSL renders it "Beese, Chelsey M.", as a co-author further
+// down the list it renders "Chelsey M. Beese". (A Lua filter can't do this:
+// citeproc fills in #refs after Quarto's user filters run, so a filter
+// walking the AST for "Beese" never sees the rendered names.)
+document.querySelectorAll('#refs .csl-entry').forEach(function (entry) {
+  entry.innerHTML = entry.innerHTML.replace(
+    /(Beese, Chelsey M\.|Chelsey M\. Beese)/g,
+    '<strong>$1</strong>'
+  );
+});
+</script>
+:::
+
 <div style="margin-top: 3rem;"></div>
 
 ## Conference Presentations
+
+### 2026
+
+**16th International Coral Reef Symposium** — Talk
+
+> *Linking habitat complexity to reef function using multi-species size-spectrum models*
+>
+> <i class="ai ai-map"></i> Auckland, New Zealand
+
+**16th International Coral Reef Symposium** — Talk
+
+> *Time-lagged impacts of lost habitat structure on reef fish communities*
+>
+> <i class="ai ai-map"></i> Auckland, New Zealand
+
+**16th International Coral Reef Symposium** — Poster
+
+> *MizerReef: an R package to create multi-species size spectrum models for structurally complex habitats*
+>
+> <i class="ai ai-map"></i> Auckland, New Zealand
 
 ### 2024
 

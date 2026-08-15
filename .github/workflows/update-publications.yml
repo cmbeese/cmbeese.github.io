@@ -1,0 +1,31 @@
+# Checks Chelsey Beese's ORCID record for new publications once a month
+# and opens a pull request adding any that aren't already in my-pubs.bib.
+# Nothing is ever auto-merged -- a human reviews and merges the PR, since
+# auto-fetched metadata can occasionally need a tweak (see scripts/update_publications.py).
+
+name: Update Publications
+
+on:
+  schedule:
+    - cron: "0 20 1 * *" # 1st of the month, 8am PST / 9am PDT
+  workflow_dispatch:
+
+jobs:
+  update-publications:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch new publications from ORCID
+        run: python3 scripts/update_publications.py
+      - name: Open a pull request if anything changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Add new publications from ORCID"
+          title: "New publications found on ORCID"
+          body: |
+            Automated check of Chelsey's [ORCID record](https://orcid.org/0000-0003-0949-7888) found publications not yet in `my-pubs.bib`. Please review before merging -- auto-fetched metadata (titles especially) occasionally needs a small cleanup.
+          branch: auto/update-publications
+          add-paths: my-pubs.bib

@@ -205,6 +205,21 @@ Beese, Chelsey M., Peter J. Mumby, and Alice Rogers. 2023. <span>“Small‐scal
 Carrington, Victoria G., Yvan Papa, Chelsey M. Beese, et al. 2021. <span>“How Functionally Diverse Are Fish in the Deep? <span>A</span> Comparison of Fish Communities in Deep and Shallow‐water Systems.”</span> <em>Diversity and Distributions</em> 27 (7): 1208–23. <a href="https://doi.org/10.1111/ddi.13268">https://doi.org/10.1111/ddi.13268</a>.
 </div>
 </div>
+<div class="{=html}">
+<script>
+// Bold Chelsey's own name wherever it appears in the bibliography -- as
+// lead author CSL renders it "Beese, Chelsey M.", as a co-author further
+// down the list it renders "Chelsey M. Beese". (A Lua filter can't do this:
+// citeproc fills in #refs after Quarto's user filters run, so a filter
+// walking the AST for "Beese" never sees the rendered names.)
+document.querySelectorAll('#refs .csl-entry').forEach(function (entry) {
+  entry.innerHTML = entry.innerHTML.replace(
+    /(Beese, Chelsey M\.|Chelsey M\. Beese)/g,
+    '<strong>$1</strong>'
+  );
+});
+</script>
+</div>
 <div style="margin-top: 3rem;">
 
 </div>
@@ -212,7 +227,25 @@ Carrington, Victoria G., Yvan Papa, Chelsey M. Beese, et al. 2021. <span>“How 
 <section id="conference-presentations" class="level2">
 <h2 class="anchored" data-anchor-id="conference-presentations">Conference Presentations</h2>
 <section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">2024</h3>
+<h3 class="anchored" data-anchor-id="section">2026</h3>
+<p><strong>16th International Coral Reef Symposium</strong> — Talk</p>
+<blockquote class="blockquote">
+<p><em>Linking habitat complexity to reef function using multi-species size-spectrum models</em></p>
+<p><i class="ai ai-map"></i> Auckland, New Zealand</p>
+</blockquote>
+<p><strong>16th International Coral Reef Symposium</strong> — Talk</p>
+<blockquote class="blockquote">
+<p><em>Time-lagged impacts of lost habitat structure on reef fish communities</em></p>
+<p><i class="ai ai-map"></i> Auckland, New Zealand</p>
+</blockquote>
+<p><strong>16th International Coral Reef Symposium</strong> — Poster</p>
+<blockquote class="blockquote">
+<p><em>MizerReef: an R package to create multi-species size spectrum models for structurally complex habitats</em></p>
+<p><i class="ai ai-map"></i> Auckland, New Zealand</p>
+</blockquote>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">2024</h3>
 <p><strong>AMSA &amp; NZMSS Joint Conference</strong> — Speed Talk</p>
 <blockquote class="blockquote">
 <p><em>Introducing MizerReef: a new tool to support management from degradation to decision-making</em></p>
@@ -220,24 +253,24 @@ Carrington, Victoria G., Yvan Papa, Chelsey M. Beese, et al. 2021. <span>“How 
 <p>🏆 Winner: NZMSS Best Student Speed Talk</p>
 </blockquote>
 </section>
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1">2023</h3>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">2023</h3>
 <p><strong>NZMSS Annual Conference</strong> — Talk</p>
 <blockquote class="blockquote">
 <p><em>Small-scale habitat complexity preserves ecosystem services on coral reefs</em></p>
 <p><i class="ai ai-map"></i> Wellington, New Zealand</p>
 </blockquote>
 </section>
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">2021</h3>
+<section id="section-3" class="level3">
+<h3 class="anchored" data-anchor-id="section-3">2021</h3>
 <p><strong>NZMSS Annual Conference</strong> — Talk</p>
 <blockquote class="blockquote">
 <p><em>Refuge and the Reef: is all habitat structure created equal?</em></p>
 <p><i class="ai ai-map"></i> Tauranga, New Zealand</p>
 </blockquote>
 </section>
-<section id="section-3" class="level3">
-<h3 class="anchored" data-anchor-id="section-3">2014</h3>
+<section id="section-4" class="level3">
+<h3 class="anchored" data-anchor-id="section-4">2014</h3>
 <p><strong>MAA &amp; AMS Joint Meetings</strong> — Poster</p>
 <blockquote class="blockquote">
 <p><em>An Agent-based Model for a Caribbean Coral Reef</em></p>
