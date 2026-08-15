@@ -31,8 +31,11 @@ devtools::install_github("cmbeese/MizerReef")
 - Documentation (coming soon)
 - Tutorials (coming soon)
 
----
-
+<!--
 ## Related Publications
 
-*Add publications that use or describe MizerReef*
+Publications using or describing MizerReef are still in progress.
+Uncomment this section and list them here once they're published/preprinted.
+
+-->
+

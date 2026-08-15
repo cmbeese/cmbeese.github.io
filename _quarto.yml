@@ -31,6 +31,7 @@ format:
       - style.css
       - styles-palette.css
     toc: true
+    toc-expand: true
     smooth-scroll: true
     filters:
       - bold-author.lua

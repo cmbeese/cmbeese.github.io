@@ -123,6 +123,22 @@ body:has(#home-page) #quarto-header {
   display: none !important;
 }
 
+/* Quarto forces #quarto-content to min-height: 100vh. On tall/large
+   screens the reef scene + fish don't grow to fill that, so all the
+   leftover space landed below the illustration as a big stretch of flat
+   blue. (Removing the min-height doesn't actually help here -- the
+   page's background paints the full viewport canvas either way, box
+   height or not.) Instead, center the content within that height so any
+   leftover space splits evenly above/below. On shorter screens, where
+   content is already taller than the viewport, min-height is just a
+   floor and this has no effect. */
+body:has(#home-page) #quarto-content {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
 /* Custom blue background for home page */
 body:has(#home-page) {
   background-color: #016FA0 !important;
@@ -148,7 +164,10 @@ body.contact-page {
 body.about-page main,
 body.contact-page main {
   color: #FFEDBF;
-  text-align: justify;
+  /* Left-aligned to match every other page on the site (justify was
+     unique to About/Contact and created uneven word-spacing gaps in a
+     narrow column since the browser doesn't hyphenate automatically). */
+  text-align: left;
 }
 
 body.contact-page .contact-item,
@@ -251,7 +270,13 @@ hr {
   color: #b56576 !important;
 }
 
-.nav-link {
+/* Scoped to the top navbar (light lavender background - navy text reads
+   fine there). This used to be a bare .nav-link selector, which also
+   matches the "On this page" sidebar TOC links (Bootstrap gives them the
+   same class) -- since the TOC sits on the dark navy page background,
+   that made every non-active TOC entry the same color as its background,
+   i.e. invisible. See the #TOC-scoped rule below for the fix. */
+.navbar-nav .nav-link {
   color: #355070 !important;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -259,9 +284,24 @@ hr {
   border-radius: 4px;
 }
 
-.nav-link:hover {
+.navbar-nav .nav-link:hover {
   color: #355070 !important;
   background-color: rgba(181, 101, 118, 0.1);
+}
+
+/* "On this page" sidebar TOC links: light text for the dark page
+   background (was invisible - see note above). */
+#TOC .nav-link {
+  color: #FFEDBF !important;
+}
+
+#TOC .nav-link:hover {
+  color: #f8b195 !important;
+}
+
+#TOC .nav-link.active {
+  color: #f8b195 !important;
+  font-weight: 700;
 }
 
 .nav-link.active,
@@ -295,8 +335,13 @@ hr {
   padding-top: 0 !important;
 }
 
-/* Full width banner images */
-img[src*="banner"] {
+/* Full width banner images. Matched by both the .banner class (the real
+   semantic marker - use this for any new banner photo) and by filename
+   for backward compatibility. Matching only by filename was a trap: the
+   Gallery banner silently lost its full-bleed treatment the moment its
+   image was swapped to a file not named "*banner*". */
+img[src*="banner"],
+img.banner {
   width: 100vw !important;
   max-width: 100vw !important;
   margin-left: calc(-50vw + 50%) !important;
@@ -345,6 +390,23 @@ body.about-page .column-screen {
   padding-top: 0 !important;
 }
 
+/* Page-top banner photo: fixed height + cropped fill so it doesn't just
+   take whatever height its native aspect ratio happens to produce.
+   .banner-compact is for shorter pages (Contact, Publications) where a
+   tall photo would push the actual content too far down. */
+img.banner {
+  /* !important needed: img[src*="banner"] above already sets
+     height: auto !important, which would otherwise win since it's the
+     same specificity as a plain class selector. */
+  height: 420px !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+img.banner.banner-compact {
+  height: 200px !important;
+}
+
 /* Bottom image styling */
 img[src*="bottom-image"] {
   width: 100vw !important;
@@ -375,9 +437,18 @@ img[src*="bottom-image"] {
   color: #FFEDBF;
 }
 
-/* Fish-shaped buttons for home page */
+/* Fish-shaped buttons for home page
+   IMPORTANT: the fish mask lives on the ::before layer only, never on
+   .btn-primary itself. A CSS mask clips the WHOLE element it's applied to,
+   including any text inside it -- if the mask were on .btn-primary, letters
+   landing on a thin part of the fish silhouette (fin/tail/gap) would simply
+   vanish. Putting the mask on ::before keeps the fish-colored fill clipped
+   to the fish shape while the text renders as a normal, unmasked layer on
+   top of it. Use the --fish-color variable to set each button's fill. */
 body:has(#home-page) .btn-primary {
-  background-color: #00769E;
+  --fish-color: #00769E;
+  position: relative;
+  background: none;
   border: none;
   min-height: 160px;
   width: 100%;
@@ -385,14 +456,22 @@ body:has(#home-page) .btn-primary {
   align-items: center;
   justify-content: center;
   padding: 4rem 8rem;
-  transition: all 0.3s ease;
-  color: #FFEDBF;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  color: #FFEDBF !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
   white-space: normal;
   text-align: center;
+}
+
+body:has(#home-page) .btn-primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--fish-color);
   -webkit-mask-image: url('../images/buttons/fish-button-5.svg');
   mask-image: url('../images/buttons/fish-button-5.svg');
   -webkit-mask-size: 100% 100%;
@@ -449,52 +528,52 @@ body:has(#home-page) .fish-swim:nth-child(even) span {
 
 /* CV button - red (palette danger) */
 body:has(#home-page) .fish-swim:nth-child(2) .btn-primary {
-  background-color: #FE3E00;
-  color: #FFEDBF;
+  --fish-color: #FE3E00;
+  color: #FFEDBF !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* CV uses fish-button-5 shape */
-body:has(#home-page) .fish-swim:nth-child(2) .btn-primary {
+body:has(#home-page) .fish-swim:nth-child(2) .btn-primary::before {
   -webkit-mask-image: url('../images/buttons/fish-button-5.svg');
   mask-image: url('../images/buttons/fish-button-5.svg');
 }
 
 body:has(#home-page) .fish-swim:nth-child(3) .btn-primary {
-  background-color: #78BAAE;
-  color: #001E5A;
+  --fish-color: #78BAAE;
+  color: #001E5A !important;
   text-shadow: none;
 }
 
 /* Current Projects color */
 body:has(#home-page) .fish-swim:nth-child(4) .btn-primary {
-  background-color: #0295A7;
-  color: #FFEDBF;
+  --fish-color: #0295A7;
+  color: #FFEDBF !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 body:has(#home-page) .fish-swim:nth-child(1) .btn-primary {
-  background-color: #FDB36A;
-  color: #001E5A;
+  --fish-color: #FDB36A;
+  color: #001E5A !important;
   text-shadow: none;
 }
 
 /* MizerReef button - cream/yellow */
 body:has(#home-page) .fish-swim:nth-child(5) .btn-primary {
-  background-color: #FFEDBF;
-  color: #001E5A;
+  --fish-color: #FFEDBF;
+  color: #001E5A !important;
   text-shadow: none;
 }
 
 /* Gallery button - bright orange */
 body:has(#home-page) .fish-swim:nth-child(6) .btn-primary {
-  background-color: #FF751C;
-  color: #FFEDBF;
+  --fish-color: #FF751C;
+  color: #FFEDBF !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Gallery uses fish-button-5 shape */
-body:has(#home-page) .fish-swim:nth-child(6) .btn-primary {
+body:has(#home-page) .fish-swim:nth-child(6) .btn-primary::before {
   -webkit-mask-image: url('../images/buttons/fish-button-5.svg');
   mask-image: url('../images/buttons/fish-button-5.svg');
 }
@@ -544,6 +623,14 @@ pre {
   padding: 1rem;
 }
 
+/* Bootstrap's default figcaption color (#666 grey) is made for a light
+   page background and is nearly invisible on this site's dark navy
+   background (e.g. Gallery page photo captions). Override it to match
+   the palette's light text color. */
+figcaption {
+  color: #FFEDBF;
+}
+
 /* Card styling */
 .card {
   background-color: rgba(53, 80, 112, 0.15);
@@ -590,23 +677,20 @@ main a {
   color: #f8b195 !important;
 }
 
-/* Exception: Don't override home page button colors */
-body:has(#home-page) a.btn-primary,
-body:has(#home-page) a.btn-primary span,
-body:has(#home-page) main a.btn-primary,
-body:has(#home-page) main a.btn-primary span {
-  color: inherit !important;
-}
-
 main a:visited {
   color: #eaac8b !important;
 }
 
-/* Don't override visited state on home page buttons */
-body:has(#home-page) a.btn-primary:visited,
-body:has(#home-page) a.btn-primary:visited span {
-  color: inherit !important;
-}
+/* NOTE: home page fish buttons don't need an exception here. Each button's
+   color is set (with !important) on .fish-swim:nth-child(N) .btn-primary
+   above, at higher selector specificity than "main a"/"main a:visited", so
+   it already wins the cascade and the <span> label inherits it correctly.
+   A previous version of this file tried to patch things with
+   "color: inherit !important" on the button/span -- but inherit pulls the
+   color from the *parent* .fish-swim wrapper (i.e. this pale peach), not
+   from the button's own intended color, which is why every button's text
+   used to render in the same low-contrast peach regardless of background.
+   Don't reintroduce that pattern. */
 
 main h1, main h2, main h3, main h4, main h5, main h6 {
   color: #f8b195 !important;
@@ -727,4 +811,17 @@ article,
 
 .skill-basic {
   background-color: #5f86b3;
+}
+/* "On this page" sidebar TOC: Quarto nests sub-headings inside a
+   Bootstrap .collapse list that only expands via JS once you scroll to
+   that section. On initial load this showed a single active link (e.g.
+   "Resources") floating with a big empty gap above it where the rest of
+   the outline should be. toc-expand in _quarto.yml sets the intent, but
+   depends on JS timing to actually add Bootstrap's .show class, which
+   wasn't reliably happening on load -- force it directly instead so the
+   full outline is always visible. */
+#TOC ul.collapse {
+  display: block !important;
+  height: auto !important;
+  visibility: visible !important;
 }

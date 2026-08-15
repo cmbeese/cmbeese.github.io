@@ -36,27 +36,43 @@ STEP 2: Find the button you want to change
    - Button 6 (Gallery): uses fish-button-2.svg ← CUSTOM SHAPE
 
 STEP 3: Locate the mask-image rules
-   Look for these lines in the button's section:
-   
+   Look for these lines in the button's section. NOTE: the mask now lives
+   on the "::before" layer, not on .btn-primary itself -- this keeps the
+   fish shape from clipping the button text (see "WHY ::before" below).
+
    -webkit-mask-image: url('../images/buttons/fish-button-X.svg');
    mask-image: url('../images/buttons/fish-button-X.svg');
 
 STEP 4: Change the fish shape
    Replace "fish-button-X.svg" with your desired fish SVG filename
-   
+
    Example - to make Publications use fish-button-2:
    Find this section:
-   
+
    body:has(#home-page) .fish-swim:nth-child(3) .btn-primary {
-     background-color: #78BAAE;
+     --fish-color: #78BAAE;
    }
-   
-   Add these lines after it:
-   
-   body:has(#home-page) .fish-swim:nth-child(3) .btn-primary {
+
+   Add this section after it:
+
+   body:has(#home-page) .fish-swim:nth-child(3) .btn-primary::before {
      -webkit-mask-image: url('../images/buttons/fish-button-2.svg');
      mask-image: url('../images/buttons/fish-button-2.svg');
    }
+
+   To change a button's FILL COLOR, set --fish-color (not background-color)
+   on the .btn-primary rule itself -- ::before reads it automatically.
+
+WHY ::before:
+===============================================
+A CSS mask clips the entire element it's applied to. Early on, the mask
+was applied directly to .btn-primary, which also contains the button's
+text -- so any letters landing on a thin part of the fish silhouette
+(a fin, the tail, a gap) simply vanished, making the label hard to read.
+The mask now lives on a ::before pseudo-element behind the text, so it
+clips the colored fish fill only; the text renders as a normal, unmasked
+layer on top. Keep it this way -- moving mask-image back onto
+.btn-primary directly will bring the invisible-text bug back.
 
 
 ADDING A NEW FISH SHAPE:

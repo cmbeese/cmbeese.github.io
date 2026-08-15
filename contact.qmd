@@ -6,7 +6,7 @@ toc: false
 ---
 
 ::: {.column-screen style="padding: 0; margin-top: 0"}
-![](images/whale-banner-3.jpg){.banner fig-align="center"}
+![](images/whale-banner-3.jpg){.banner .banner-compact fig-align="center"}
 :::
 
 ::: {=html}
