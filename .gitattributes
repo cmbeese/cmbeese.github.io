@@ -1,0 +1,22 @@
+# Normalize line endings: store everything in git as LF, and check it
+# back out as LF too (eol=lf), regardless of what OS/editor touches it.
+# This is what was causing the merge conflicts we just untangled -- a
+# local edit (CRLF) and a GitHub web edit (LF) to the same file made git
+# see the whole file as changed on both sides, not just the real edit.
+* text=auto eol=lf
+
+# Never let git try to convert line endings in binary files -- doing so
+# would corrupt them.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.JPG binary
+*.JPEG binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
